@@ -42,6 +42,10 @@ https://nano.to/[NAME]?title=Donate&amount=50
 ?title=Donate
 &description=50
 &plans=Basic:30,Premium:50
+&success_url=https://mywebsite.com/success
+&cancel_url=https://mywebsite.com/
+&webhook_url=https://mywebsite.com/webhook
+&webhook_secret=my-secret # don't use this in browser
 ```
 
 ## 👤 Author
