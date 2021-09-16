@@ -43,8 +43,8 @@ https://nano.to/[NAME]?title=Donate&price=50
 All options:
 
 ```sh
-?title=Donate
-&price=Donate
+?title=Coffee
+&price=20
 &description=50
 &plans=Basic:30,Premium:50
 &success_url=https://mywebsite.com/success
