@@ -15,13 +15,13 @@ https://nano.to/[YOUR_NANO_ADDRESS]
 ```
 
 ```sh
-https://nano.to/nano_19o64g3cy484nwfen76tfzz94icr1wn9bccw3ruefaham6x5hggpf6pz185x
+https://nano.to/nano_3gf57qk4agze3ozwfhe8w6oap3jmdb4ofe9qo1ra3wcs5jc888rwyt61ymea
 ```
 
 ## Short Urls
 
 ```sh
-https://nano.to/nano_19o64g3cy484nwfen76tfzz94icr1wn9bccw3ruefaham6x5hggpf6pz185x
+https://nano.to/nano_3gf57qk4agze3ozwfhe8w6oap3jmdb4ofe9qo1ra3wcs5jc888rwyt61ymea
 ```
 
 ```sh
