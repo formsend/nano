@@ -25,7 +25,7 @@ https://nano.to/nano_19o64g3cy484nwfen76tfzz94icr1wn9bccw3ruefaham6x5hggpf6pz185
 ```
 
 ```sh
-https://nano.to/MrWhite --> https://nano.to/nano_19o64g..
+https://nano.to/henry --> https://nano.to/nano_19o64g..
 ```
 
 Visit [https://nano.to](https://nano.to/) to reserve names.
