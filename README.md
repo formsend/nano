@@ -1,3 +1,1 @@
-### Repo for Upcoming Nano Payment API Issues & Feature Requests
-
-More info: [https://nano.miami](https://nano.miami)
+![Cover](https://raw.githubusercontent.com/formsend/nano/master/.github/banner.png)
