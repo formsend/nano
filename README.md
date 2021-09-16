@@ -64,7 +64,7 @@ All options:
 
 Give a ⭐️ if this project helped you!
 
-Contributions, issues and feature requests are welcome! Feel free to check [issues page](https://github.com/fwd/server/issues).
+Contributions, issues and feature requests are welcome! Feel free to check [issues page](https://github.com/formsend/nano/issues).
 
 ## ♥️ Donate 
 
