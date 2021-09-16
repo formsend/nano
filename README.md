@@ -6,8 +6,7 @@
 
 #### This service is in active development by the team at [Formsend](https://formsend.org). Bug reports, pull requests and feature requests are welcomed.
 
-## Live Demo: [nano.to/moon](https://nano.to/moon?title=Pay%20to%20Moon&success_url=https://media3.giphy.com/media/vCKC987OpQAco/giphy.gif&description=This%20is%20a%20live%20test.%20This%20NANO%20address%20is%20the%20nano.to%20official%20address.&success_url=https://media3.giphy.com/media/vCKC987OpQAco/giphy.gif)
-
+### Live Demo: [nano.to/moon](https://nano.to/moon?title=Pay%20to%20Moon&success_url=https://media3.giphy.com/media/vCKC987OpQAco/giphy.gif&description=This%20is%20a%20live%20test.%20This%20NANO%20address%20is%20the%20nano.to%20official%20address.&success_url=https://media3.giphy.com/media/vCKC987OpQAco/giphy.gif)
 
 ## Usage
 
@@ -58,7 +57,7 @@ All options:
 
 **Formsend.org**
 
-* Github: [@fwd](https://github.com/formsend)
+* Github: [@formsend](https://github.com/formsend)
 * Website: [https://formsend.org](https://formsend.org)
 
 ## 🤝 Contributing
