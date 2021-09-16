@@ -31,15 +31,18 @@ Visit [https://nano.to](https://nano.to/) to reserve names.
 ## Customize
 
 ```sh
-https://nano.to/[NANO_ADDRESS]?title=Donate&amount=50
+https://nano.to/[NANO_ADDRESS]?title=Donate&price=50
 ```
 
 ```sh
-https://nano.to/[NAME]?title=Donate&amount=50
+https://nano.to/[NAME]?title=Donate&price=50
 ```
+
+All options:
 
 ```sh
 ?title=Donate
+&price=Donate
 &description=50
 &plans=Basic:30,Premium:50
 &success_url=https://mywebsite.com/success
