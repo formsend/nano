@@ -2,7 +2,7 @@
 
 # nano.to
 
-> Nano Cyrptocurrency Payment API & Shortlink Service.
+> Nano Crypto Currency Payment API & Short Link Service.
 
 #### This service is in active development by the team at [Formsend](https://formsend.org). Bug reports, pull requests and feature requests are welcomed.
 
