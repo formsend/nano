@@ -42,7 +42,7 @@ https://nano.to/[NAME]?title=Donate&price=50
 
 All options:
 
-```sh
+```bash
 ?title=Donate
 &price=50
 &description=50
