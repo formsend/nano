@@ -4,7 +4,7 @@
 
 > Nano Crypto Currency Payment API & Short Link Service.
 
-#### This service is in active development by the team at [Formsend](https://formsend.org). Bug reports, pull requests and feature requests are welcomed.
+#### This service is in active development by the team at [Formsend](https://formsend.org). This Repo is for bug reports, pull requests and feature requests and general support. No date yet on us Open Sourcing the API code, but definitely on the horizon.
 
 ### Live Demo: [nano.to/demo](https://nano.to/moon?title=Github%20Demo&success_url=https://media3.giphy.com/media/vCKC987OpQAco/giphy.gif&description=This%20is%20a%20live%20test.%20This%20NANO%20address%20is%20the%20nano.to%20official%20address.&success_url=https://media3.giphy.com/media/vCKC987OpQAco/giphy.gif&cancel_url=https://github.com/formsend/nano.to)
 
