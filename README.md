@@ -8,7 +8,7 @@
 
 ### Live Demo: [nano.to/demo](https://nano.to/moon?title=Github%20Demo&success_url=https://media3.giphy.com/media/vCKC987OpQAco/giphy.gif&description=This%20is%20a%20live%20test.%20This%20NANO%20address%20is%20the%20nano.to%20official%20address.&success_url=https://media3.giphy.com/media/vCKC987OpQAco/giphy.gif&cancel_url=https://github.com/formsend/nano.to)
 
-## Usage
+## Basic Usage
 
 ```sh
 https://nano.to/[YOUR_NANO_ADDRESS]
@@ -52,6 +52,28 @@ All options:
 &webhook_url=https://mywebsite.com/webhook
 &webhook_secret=my-secret # don't use this in browser
 ```
+
+### Advanced Usage
+
+You can check the status of any domain by appending '?whois=true' or '?check=true' to any domain.
+
+For example:
+
+```
+https://nano.to/moon?whois=true
+```
+
+Gives us the following response
+
+```
+{
+  "name": "moon",
+  "status": "Active",
+  "expires": "September 16, 2030 7:27 PM EST",
+  "created": "September 15, 2021 7:27 PM EST"
+}
+```
+
 
 ## 👤 Author
 
