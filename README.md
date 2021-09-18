@@ -74,6 +74,9 @@ Gives us the following response
 }
 ```
 
+## Rate Limiting
+
+Our entire API is rate limited to prevent abuse. If you have high usage needs, please contact us at hello@forward.miami and we can accomodate your demands.
 
 ## 👤 Author
 
