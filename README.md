@@ -53,9 +53,9 @@ All options:
 &webhook_secret=my-secret # don't use this in browser
 ```
 
-### Advanced Usage
+### Check Vanity Name Status
 
-You can check the status of any domain by appending '?whois=true' or '?check=true' to any domain.
+You can check the status of any domain by appending '?whois=true' or '?check=true' to any domain. Even if you do not own it.
 
 For example:
 
@@ -76,7 +76,7 @@ Gives us the following response
 
 ## Rate Limiting
 
-Our entire API is rate limited to prevent abuse. If you have high usage needs, please contact us at hello@forward.miami and we can accomodate your demands.
+Our entire API is rate limited to prevent abuse. If you have high usage needs, please contact us at hello[at]forward.miami and we can accomodate.
 
 ## 👤 Author
 
