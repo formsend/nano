@@ -110,3 +110,7 @@ D9U1FLygkMydx3DE2sXgnuFpHm7ePm3Zwe
 # Ethereum
 0xdD4691Dc9562FB262e4b2076bE255303243f271d
 ```
+
+## Stargazers
+
+[![Stargazers over time](https://starchart.cc/formsend/nano.to.svg)](https://starchart.cc/formsend/nano.to)
