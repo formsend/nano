@@ -53,7 +53,7 @@ All options:
 &webhook_secret=my-secret # don't use this in browser
 ```
 
-### Check Vanity Name Status
+### Check Short Name Status
 
 You can check the status of any domain by appending '?whois=true' or '?check=true' to any domain. Even if you do not own it.
 
