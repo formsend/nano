@@ -55,7 +55,7 @@ All options:
 
 ### Check Short Name Status
 
-You can check the status of any domain by appending '?whois=true' or '?check=true' to any domain. Even if you do not own it.
+You can check the status of any name by appending '?whois=true' or '?check=true' to the url. Even if you do not own it.
 
 For example:
 
