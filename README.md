@@ -76,7 +76,7 @@ Gives us the following response
 
 ## Rate Limiting
 
-Our entire API is rate limited to prevent abuse. If you need lots of simultaneous API calls, please let us know first at hello[at]forward.miami.
+Our entire API is rate limited to prevent abuse. If you need lots of simultaneous API calls, please let us know first at hello[at]forward.miami. Or your application might be blocked automatically.
 
 ## 👤 Author
 
