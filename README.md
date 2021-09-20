@@ -10,24 +10,24 @@
 
 ## Timeline
 
-✅ Launch Nano.to
-🔲 Deploy nano.to Worldwide (Edge servers)
-🔲 Color & Background URL Parameters 👨🏽‍💻
-🔲 Credit Card Support (Stripe) 👨🏽‍💻
-🔲 Multi-Crypto Support
-🔲 Search People by Username
-🔲 Widget API 👨🏽‍💻👨🏽‍💻
-🔲 HTML Banner API 👨🏽‍💻
-🔲 Wordpress Plugins
-🔲 Shopify Plugins
-🔲 Vanity Name Resell Marketplace
-🔲 National Nano Billboard Campaign 👨🏽‍💻
-🔲 Nano Identity Platform
-🔲 Enterprise SLA
+- ✅ Launch Nano.to
+- 🔲 Deploy nano.to Worldwide (Edge servers)
+- 🔲 Color & Background URL Parameters 👨🏽‍💻
+- 🔲 Credit Card Support (Stripe) 👨🏽‍💻
+- 🔲 Multi-Crypto Support
+- 🔲 Search People by Username
+- 🔲 Widget API 👨🏽‍💻👨🏽‍💻
+- 🔲 HTML Banner API 👨🏽‍💻
+- 🔲 Wordpress Plugins
+- 🔲 Shopify Plugins
+- 🔲 Vanity Name Resell Marketplace
+- 🔲 National Nano Billboard Campaign 👨🏽‍💻
+- 🔲 Nano Identity Platform
+- 🔲 Enterprise SLA
 
-✅ = Done
-🔲 = Pending
-👨🏽‍💻 = Being worked on or researched
+- ✅ = Done
+- 🔲 = Pending
+- 👨🏽‍💻 = Being worked on or researched
 
 ## Basic Usage
 
