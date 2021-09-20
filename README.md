@@ -8,6 +8,27 @@
 
 ### Live Demo: [nano.to/demo](https://nano.to/moon?title=Github%20Demo&success_url=https://media3.giphy.com/media/vCKC987OpQAco/giphy.gif&description=This%20is%20a%20live%20test.%20This%20NANO%20address%20is%20the%20nano.to%20official%20address.&success_url=https://media3.giphy.com/media/vCKC987OpQAco/giphy.gif&cancel_url=https://github.com/formsend/nano.to)
 
+## Timeline
+
+✅ Launch Nano.to
+🔲 Deploy nano.to Worldwide (Edge servers)
+🔲 Color & Background URL Parameters 👨🏽‍💻
+🔲 Credit Card Support (Stripe) 👨🏽‍💻
+🔲 Multi-Crypto Support
+🔲 Search People by Username
+🔲 Widget API 👨🏽‍💻👨🏽‍💻
+🔲 HTML Banner API 👨🏽‍💻
+🔲 Wordpress Plugins
+🔲 Shopify Plugins
+🔲 Vanity Name Resell Marketplace
+🔲 National Nano Billboard Campaign 👨🏽‍💻
+🔲 Nano Identity Platform
+🔲 Enterprise SLA
+
+✅ = Done
+🔲 = Pending
+👨🏽‍💻 = Being worked on or researched
+
 ## Basic Usage
 
 ```sh
