@@ -74,6 +74,22 @@ Gives us the following response
 }
 ```
 
+### RAW Amount in QR Codes (Natrium Support)
+
+The API currently supports the following URI schema:
+
+```
+nano:nano_3gf57qk4agze3ozwfhe8w6oap3jmdb4ofe9qo1ra3wcs5jc888rwyt61ymea?amount=1000
+```
+
+The amount is NOT in RAW. See this [issue](https://github.com/formsend/nano.to/issues/4) for more info.
+
+For now, you can pass an optional url param to force the API to generate RAW friendly QR Codes. 
+
+```
+https://nano.to/moon?raw=true
+```
+
 ## Rate Limiting
 
 Our entire API is rate limited to prevent abuse. If you need lots of simultaneous API calls, please let us know in advanced by emailing hello[at]forward.miami, subject line 'Api Use'. 
