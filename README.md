@@ -70,7 +70,7 @@ axios.post('https://nano.to/[NANO_ADDRESS_OR_LEASED_NAME]', {
         { "name": "Fries", "price": 5 },
         { "name": "Burger", "price": 10 },
         { "name": "Happy Meal", "price": 15 },
-        { "name": "Cookies 🍪", "price": 5 }
+        { "name": "Cookies 🍪", "price": 3 }
     ],
     "business": {
         "name": "McDonalds",
