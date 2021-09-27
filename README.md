@@ -77,7 +77,8 @@ axios.post('https://nano.to/[NANO_ADDRESS_OR_LEASED_NAME]', {
         "logo": "https://www.tailorbrands.com/wp-content/uploads/2020/07/mcdonalds-logo.jpg"
     },
     "success_url": "https://mywebsite.com/success?id={{id}}&anotherParam=hello",
-    "cancel_url": "https://google.com"
+    "cancel_url": "https://google.com",
+    "metadata": { "userId": 'joemama' }
 })
 ```
 
