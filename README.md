@@ -62,7 +62,10 @@ The same and more advanced params can be passed in the body of a POST request as
 
 axios.post('https://nano.to/[NANO_ADDRESS_OR_LEASED_NAME]', {
     "title": "Donate",
-    "price": 10,
+    "plans": [
+        { "name": "Fries", "price": 5 },
+        { "name": "Burger", "price": 10 }
+    ],
     "business": {
         "name": "McDonalds",
         "logo": "https://www.tailorbrands.com/wp-content/uploads/2020/07/mcdonalds-logo.jpg"
