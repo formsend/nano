@@ -99,7 +99,7 @@ GET: https://api.nano.to/checkout/666ee7bf26a?json=true
 ```
 
 
-**Note: While in Beta, data is subject to change and no user data is being permanetly stored. Checkouts are stored in-memory and expire when successful, or after 4 hours, which ever comes first.**
+**Note: While in Beta, API data structure may change, and user data is not being stored. Checkouts are stored in-memory and expire when successful, or after 4 hours, which ever comes first.**
 
 ### Check Short Name Status
 
