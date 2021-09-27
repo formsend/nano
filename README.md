@@ -57,6 +57,10 @@ All options:
 
 The same and more advanced params can be passed in the body of a POST request as so:
 
+```
+POST: https://nano.to/[NANO_ADDRESS_OR_LEASED_NAME]
+```
+
 ```javascript
 // npm install axios
 
@@ -87,10 +91,10 @@ Example response:
 }
 ```
 
-You can check the entire data structure of a Checkout by appending '?json=true' to the 'url' in the POST response. 
+You can check the data of a Checkout within it's lifespan by appending '?json=true' to the 'url' as a GET request. 
 
 ```
-https://api.nano.to/checkout/666ee7bf26a?json=true
+GET: https://api.nano.to/checkout/666ee7bf26a?json=true
 ```
 
 
