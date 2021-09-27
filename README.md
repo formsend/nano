@@ -47,7 +47,7 @@ All options:
 ```bash
 ?title=Donate
 &price=50
-&description=50
+&description=<p>HTML allowed</p>
 &suggest=Basic:30,Premium:50
 &success_url=https://mywebsite.com/success?id={{id}}
 &cancel_url=https://mywebsite.com/
@@ -55,7 +55,7 @@ All options:
 &webhook_secret=my-secret # don't use this in browser
 ```
 
-The same params can be passed in the body of a POST request as so:
+The same and more advanced params can be passed in the body of a POST request as so:
 
 ```javascript
 // npm install axios
@@ -81,6 +81,15 @@ Example response:
     "exp": "2021-09-23T01:51:23.853Z"
 }
 ```
+
+You can check the entire data structure of a Checkout by appending '?json=true' to the 'url' in the POST response. 
+
+```
+https://api.nano.to/checkout/666ee7bf26a?json=true
+```
+
+
+**Note: While in Beta, data is subject to change and no user data is being permanetly stored. Checkouts are stored in-memory and expire when successful, or after 4 hours, which ever comes first.**
 
 ### Check Short Name Status
 
@@ -122,6 +131,7 @@ https://nano.to/moon?raw=true
 ## Rate Limiting
 
 The entire API is rate limited to prevent abuse. If you need lots of simultaneous API calls, please let us know in advanced by emailing hello[at]forward.miami, subject line 'Api Use'. 
+
 
 ## 👤 Author
 
