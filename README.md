@@ -61,10 +61,12 @@ The same and more advanced params can be passed in the body of a POST request as
 // npm install axios
 
 axios.post('https://nano.to/[NANO_ADDRESS_OR_LEASED_NAME]', {
-    "title": "Donate",
+    "title": "New Order",
     "plans": [
         { "name": "Fries", "price": 5 },
-        { "name": "Burger", "price": 10 }
+        { "name": "Burger", "price": 10 },
+        { "name": "Happy Meal", "price": 15 }
+        { "name": "Cookies 🍪", "price": 5 }
     ],
     "business": {
         "name": "McDonalds",
