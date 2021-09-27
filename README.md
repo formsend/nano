@@ -33,11 +33,11 @@ Visit [https://nano.to](https://nano.to/) to reserve names.
 ## Customize
 
 ```sh
-https://nano.to/[NANO_ADDRESS]?title=Donate&price=50
+GET: https://nano.to/[NANO_ADDRESS]?title=Donate&price=50
 ```
 
 ```sh
-https://nano.to/[NAME]?title=Donate&price=50
+GET: https://nano.to/[NAME]?title=Donate&price=50
 ```
 
 All options:
@@ -51,6 +51,23 @@ All options:
 &cancel_url=https://mywebsite.com/
 &webhook_url=https://mywebsite.com/webhook
 &webhook_secret=my-secret # don't use this in browser
+```
+
+The same params can be passed in the body of a POST request as so:
+
+```javascript
+// npm install axios
+
+axios.post('https://nano.to/[NANO_ADDRESS_OR_LEASED_NAME]', {
+    "title": "Donate",
+    "price": 10,
+    "business": {
+        "name": "McDonalds",
+        "logo": "https://www.tailorbrands.com/wp-content/uploads/2020/07/mcdonalds-logo.jpg"
+    },
+    "success_url": "https://mywebsite.com/success?id={{id}}&anotherParam=hello",
+    "cancel_url": "https://google.com"
+})
 ```
 
 ### Check Short Name Status
