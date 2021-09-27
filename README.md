@@ -70,6 +70,16 @@ axios.post('https://nano.to/[NANO_ADDRESS_OR_LEASED_NAME]', {
 })
 ```
 
+Example response:
+
+```
+{
+    "id": "666ee7bf26a",
+    "url": "https://api.nano.to/checkout/666ee7bf26a",
+    "exp": "2021-09-23T01:51:23.853Z"
+}
+```
+
 ### Check Short Name Status
 
 You can check the status of any name by appending '?whois=true' or '?check=true' to the url. Even if you do not own it.
