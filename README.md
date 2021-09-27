@@ -8,7 +8,7 @@
 
 ### Live Demo: [nano.to/demo](https://nano.to/moon?title=Github%20Demo&success_url=https://media3.giphy.com/media/vCKC987OpQAco/giphy.gif&description=This%20is%20a%20live%20test.%20This%20NANO%20address%20is%20the%20nano.to%20official%20address.&success_url=https://media3.giphy.com/media/vCKC987OpQAco/giphy.gif&cancel_url=https://github.com/formsend/nano.to)
 
-#### Checkout pages are free, and always will be. They are accesible from any internet connected device. 
+#### Checkout pages are free, and always will be. They are accesible from any internet connected device with a modern web browser. 
 
 ## Basic Usage
 
