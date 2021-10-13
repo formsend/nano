@@ -84,7 +84,7 @@ Email [Formsend](mailto:hello@forward.miami?subject=Nano.to&nbsp;Api&nbsp;Use), 
 
 ---
 
-## Get Live NANO Price
+## GET: Live NANO Price
 
 Get current NANO price in USD. The price is refreshed every 60 seconds. CoinMarketCap is used for price data.
 
@@ -117,9 +117,9 @@ Demo (Advanced): https://api.nano.to/price?symbol=ETH&currency=CYN
 
 ---
 
-## NANO Address Balance
+## GET: NANO Address Balance
 
-Get basic Blockchain information of any NANO address. Including balance.
+Basic Blockchain information of any NANO address. Including balance.
 
 ```bash
 https://api.nano.to/account/[NANO_ADDRESS]
@@ -150,9 +150,9 @@ Demo: https://api.nano.to/account/moon
 
 ---
 
-## NANO Address Pending
+## GET: NANO Address Pending Blocks
 
-Get an array of pending blocks i.e transactions of any NANO address.
+Array of pending blocks i.e transactions for a NANO address.
 
 ```bash
 https://api.nano.to/pending/[NANO_ADDRESS]
@@ -181,9 +181,9 @@ Demo: https://api.nano.to/pending/moon
 
 ---
 
-## NANO Address History
+## GET: NANO Address History Blocks
 
-Get an array of historical transactions of any NANO address. For now, API only goes back 20 transactions. 
+Array of historical transactions of any NANO address. For now, API only goes back 20 transactions.  
 
 ```bash
 https://api.nano.to/history/[NANO_ADDRESS]
@@ -223,7 +223,7 @@ Demo: https://api.nano.to/history/moon
 
 ---
 
-## NANO Transaction By Amount
+## GET: NANO Transaction By Amount
 
 Check if a NANO address has received a payment with a specific amount. **Searches Pending & History.**. This is useful if you want to built your own payment checker. i.e **Nano.to**
 
