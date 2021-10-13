@@ -70,7 +70,7 @@ Nano.to API is free, and open to the world. The API is built to operate 24/7, 36
 
 To use the API you do **not** need an API key. 
 
-Your IP Address is your API key. 
+Your IP Address is your API key. Don't abuse it.
 
 ---
 
@@ -78,7 +78,9 @@ Your IP Address is your API key.
 
 On most endpoints, you can expect to have 5 requests, per second. **This is plenty for most use cases.** Hitting the limit multiple times per day may result in longer lockouts or permanent ban.
 
-If you need lots of simultaneous API calls, please let us know in advanced. Email [Formsend](mailto:hello@forward.miami), subject line 'Nano.to Api Use'. 
+If you need lots of simultaneous API calls, please let us know in advanced. 
+
+Email [Formsend](mailto:hello@forward.miami), subject line 'Nano.to Api Use'. 
 
 ---
 
