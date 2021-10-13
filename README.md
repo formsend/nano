@@ -49,6 +49,94 @@ All Options:
 &cancel_url=https://mywebsite.com/
 ```
 
+
+The same and more advanced params can be passed in the body of a POST request as so:
+
+```
+POST: https://nano.to/[NANO_ADDRESS_OR_USERNAME]
+```
+
+```javascript
+// npm install axios
+
+axios.post('https://nano.to/[NANO_ADDRESS_OR_USERNAME]', {
+    "title": "New Order",
+    "plans": [
+        { "name": "Fries", "price": 5 },
+        { "name": "Burger", "price": 10 },
+        { "name": "Happy Meal", "price": 15 },
+        { "name": "Cookies 🍪", "price": 3 }
+    ],
+    "business": {
+        "name": "McDonalds",
+        "logo": "https://www.tailorbrands.com/wp-content/uploads/2020/07/mcdonalds-logo.jpg"
+    },
+    "success_url": "https://mywebsite.com/success?id={{id}}&anotherParam=hello",
+    "cancel_url": "https://google.com",
+    "metadata": { "userId": 'joemama' }
+})
+```
+
+Example response:
+
+```
+{
+    "id": "666ee7bf26a",
+    "url": "https://api.nano.to/checkout/666ee7bf26a",
+    "exp": "2021-09-23T01:51:23.853Z"
+}
+```
+
+You can check the data of a Checkout within it's lifespan by appending '?json=true' to the 'url' as a GET request. 
+
+```
+GET: https://api.nano.to/checkout/666ee7bf26a?json=true
+```
+
+
+**Note: While in Beta, API data structure may change, and user data is not being stored. Checkouts are stored in-memory and expire when successful, or after 4 hours, which ever comes first.**
+
+### Check Short Name Status
+
+You can check the status of any name by appending '?check=true' to the url. Even if you do not own it.
+
+For example:
+
+```
+https://nano.to/moon?check=true
+```
+
+Gives us the following response
+
+```
+{
+  "name": "moon",
+  "status": "Active",
+  "expires": "September 16, 2030 7:27 PM EST",
+  "created": "September 15, 2021 7:27 PM EST"
+}
+```
+
+### RAW Amount in QR Codes (Natrium Support)
+
+The API currently supports the following URI schema:
+
+```
+nano:nano_3gf57qk4agze3ozwfhe8w6oap3jmdb4ofe9qo1ra3wcs5jc888rwyt61ymea?amount=1000
+```
+
+The amount is NOT in MEGA (not RAW). See this [issue](https://github.com/formsend/nano.to/issues/4) for more info.
+
+To force RAW, you can pass an optional url param to force the API to generate RAW friendly QR Codes. 
+
+```
+https://nano.to/moon?natrium=true
+```
+
+```
+https://nano.to/moon?title=Donate&price=10&natrium=true
+```
+
 ---
 
 # Advanced Usage (API)
