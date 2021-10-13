@@ -1,6 +1,6 @@
 ![Cover](https://raw.githubusercontent.com/formsend/nano/master/.github/banner.png)
 
-**[Nano.to](https://nano.to) is a free payment 'checking' API, built on top of the NANO blockchain.** 
+# **[Nano.to](https://nano.to) is a free payment 'checking' API, built on top of the NANO blockchain.** 
 
 Use this API to create payment Checkout pages (like Stripe Checkout), check for payments, and more. Accesible from any internet connected device with a modern web browser. Anonymous no account or API key required.
 
