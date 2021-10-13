@@ -89,7 +89,7 @@ Email [Formsend](mailto:hello@forward.miami), subject line 'Nano.to Api Use'.
 Get current NANO price in USD. The price is refreshed every 60 seconds. CoinMarketCap is used for price data.
 
 ```bash
-GET: https://api.nano.to/price
+https://api.nano.to/price
 ```
 
 Response
@@ -111,9 +111,9 @@ You can pass URL query parameters to change your request. Our API supports passi
 |   symbol | string |  Crypto symbol. **Default** NANO |
 |   currency | string |  [ISO-4217](https://docs.1010data.com/1010dataReferenceManual/DataTypesAndFormats/currencyUnitCodes.html) symbol. **Default** USD |
 
-Basic Usage: https://api.nano.to/price
+Demo: https://api.nano.to/price
 
-Advanced Usage: https://api.nano.to/price?symbol=ETH&currency=CYN
+Demo (Advanced): https://api.nano.to/price?symbol=ETH&currency=CYN
 
 ---
 
@@ -122,7 +122,7 @@ Advanced Usage: https://api.nano.to/price?symbol=ETH&currency=CYN
 Get basic Blockchain information of any NANO address. Including balance.
 
 ```bash
-GET: https://api.nano.to/account/[NANO_ADDRESS]
+https://api.nano.to/account/[NANO_ADDRESS]
 ```
 
 Response
@@ -155,7 +155,7 @@ Demo: https://api.nano.to/account/moon
 Get an array of pending blocks i.e transactions of any NANO address.
 
 ```bash
-GET: https://api.nano.to/pending/[NANO_ADDRESS]
+https://api.nano.to/pending/[NANO_ADDRESS]
 ```
 
 Response
@@ -186,7 +186,7 @@ Demo: https://api.nano.to/pending/moon
 Get an array of historical transactions of any NANO address. For now, API only goes back 20 transactions. 
 
 ```bash
-GET: https://api.nano.to/history/[NANO_ADDRESS]
+https://api.nano.to/history/[NANO_ADDRESS]
 ```
 
 Response
@@ -225,14 +225,14 @@ Demo: https://api.nano.to/history/moon
 
 ## NANO Transaction By Amount
 
-Check if a NANO address has received a payment with a specific amount. Searches Pending & History. This is useful if you want to built your own payment checker. i.e Nano.to
+Check if a NANO address has received a payment with a specific amount. **Searches Pending & History.**. This is useful if you want to built your own payment checker. i.e **Nano.to**
 
 ```bash
-GET: https://api.nano.to/payment/[NANO_ADDRESS]/[AMOUNT]
+https://api.nano.to/payment/[NANO_ADDRESS]/[AMOUNT]
 ```
 
 ```bash
-GET: https://api.nano.to/payment/nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o/0.02235
+https://api.nano.to/payment/nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o/0.02235
 ```
 
 Amount must be in decimal (MEGA) not RAW.
@@ -265,7 +265,3 @@ If no transaction is found, the response will be false.
 **Params**
 
 No additional params.
-
-Demo (Exists): https://api.nano.to/payment/moon/0.02235
-
-Demo 2 (Not Found): https://api.nano.to/payment/moon/0.02235245
