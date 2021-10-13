@@ -96,12 +96,11 @@ You can check the data of a Checkout within it's lifespan by appending '?json=tr
 GET: https://api.nano.to/checkout/666ee7bf26a?json=true
 ```
 
+**Note:** While in Beta, API data structure may change. Checkouts data is stored in-memory and expire after 12 hours.
 
-**Note: While in Beta, API data structure may change, and user data is not being stored. Checkouts are stored in-memory and expire when successful, or after 4 hours, which ever comes first.**
+### Check Username Status
 
-### Check Short Name Status
-
-You can check the status of any name by appending '?check=true' to the url. Even if you do not own it.
+You can check the status and expiration of any Username by appending '?check=true' to the url. Even if you do not own it.
 
 For example:
 
@@ -139,6 +138,8 @@ https://nano.to/moon?raw=true
 ```
 https://nano.to/moon?title=Donate&price=10&raw=true
 ```
+
+Clicking (or Tapping) the QR Code while using Raw mode will open Natrium and automatically fill in amount and address, on most phones. 
 
 ---
 
