@@ -32,7 +32,7 @@ https://nano.to/Moon
 
 Visit [https://nano.to](https://nano.to/) to reserve your Username.
 
-## Customize
+# Customize
 
 ```sh
 https://nano.to/[NANO_ADDRESS_OR_USERNAME]?title=Donate&price=50
@@ -49,6 +49,7 @@ All Options:
 &cancel_url=https://mywebsite.com/
 ```
 
+## POST Request (More Secure)
 
 The same and more advanced params can be passed in the body of a POST request as so:
 
@@ -73,7 +74,9 @@ axios.post('https://nano.to/[NANO_ADDRESS_OR_USERNAME]', {
     },
     "success_url": "https://mywebsite.com/success?id={{id}}&anotherParam=hello",
     "cancel_url": "https://google.com",
-    "metadata": { "userId": 'joemama' }
+    "webhook_url": "https://mywebsite.com/secret-webhook",
+    "webhook_secret": "my-super-secret",
+    "metadata": { "userId": "joemama" }
 })
 ```
 
