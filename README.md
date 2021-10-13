@@ -80,7 +80,7 @@ On most endpoints, you can expect to have 5 requests, per second. **This is plen
 
 If you need lots of simultaneous API calls, please let us know in advanced. 
 
-Email [Formsend](mailto:hello@forward.miami), subject line 'Nano.to Api Use'. 
+Email [Formsend](mailto:hello@forward.miami?subject=Nano.to Api Use), subject line 'Nano.to Api Use'. 
 
 ---
 
