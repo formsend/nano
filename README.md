@@ -49,9 +49,9 @@ All Options:
 &cancel_url=https://mywebsite.com/
 ```
 
-## POST Request (More Secure)
+## POST: Checkout Pages (More Secure)
 
-The same and more advanced params can be passed in the body of a POST request as so:
+The same as before, and more advanced params can be passed in the body. 
 
 ```
 POST: https://nano.to/[NANO_ADDRESS_OR_USERNAME]
