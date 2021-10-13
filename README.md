@@ -133,11 +133,11 @@ The amount is NOT in MEGA (not RAW). See this [issue](https://github.com/formsen
 To force RAW, you can pass an optional url param to force the API to generate RAW friendly QR Codes. 
 
 ```
-https://nano.to/moon?natrium=true
+https://nano.to/moon?raw=true
 ```
 
 ```
-https://nano.to/moon?title=Donate&price=10&natrium=true
+https://nano.to/moon?title=Donate&price=10&raw=true
 ```
 
 ---
