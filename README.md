@@ -317,14 +317,14 @@ Demo: https://api.nano.to/history/moon
 
 ## GET: NANO Transaction By Amount
 
-Check if a NANO address has received a payment with a specific amount. **Searches Pending & History.**. This is useful if you want to built your own payment checker. i.e **Nano.to**
+Check if a NANO address has received a payment with a specific amount. **Searches Pending & History.** This is useful if you want to built your own payment checker.
 
 ```bash
 https://api.nano.to/payment/[NANO_ADDRESS]/[AMOUNT]
 ```
 
 ```bash
-https://api.nano.to/payment/nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o/0.02235
+https://api.nano.to/payment/nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o/0.02143
 ```
 
 Amount must be in decimal (MEGA) not RAW.
