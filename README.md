@@ -53,7 +53,6 @@ All Options:
 
 # Advanced Usage (API)
 
----
 
 ### Base URL
 
