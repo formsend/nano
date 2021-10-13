@@ -2,9 +2,9 @@
 
 # **[Nano.to](https://nano.to) is a free payment 'checking' API, built on top of the NANO blockchain.** 
 
-Use this API to create payment Checkout pages (like Stripe Checkout), check for payments, and more. Accesible from any internet connected device with a modern web browser. Anonymous no account or API key required.
+Use this API to create payment pages (like Stripe Checkout), Check for payments, and more. Accesible from any internet connected device with a modern web browser. Anonymous, no account or API key required to use.
 
-Launched **September 15th, 2021**.  **We're still in Beta**. API is pretty stable and snappy. More endpoints and complex operations are planned in the future.
+Launched **September 15th, 2021**.  **We're still in Beta**. API is stable. More endpoints and complex operations are planned in the future. Enterprise planned for late 2022.
 
 [NANO](https://nano.org) is a fee-less, decentralized crypto currency. **We did not built or own NANO.** We simply built a service on top of it. In the process, these public API endpoints were made available. 
 
