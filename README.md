@@ -165,7 +165,9 @@ Clicking (or Tapping) the QR Code while using Raw mode will open Natrium and aut
 
 ### Base URL
 
-***https://api.nano.to***
+```
+https://api.nano.to
+```
 
 The API is accesed only on HTTPS by GET or POST request. You can use the browser for most GET endpoints. POST requests require something like [Postman](https://www.postman.com/) or a backend server. 
 
