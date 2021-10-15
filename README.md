@@ -21,7 +21,7 @@ https://nano.to/[NANO_ADDRESS_OR_USERNAME]
 Example:
 
 ```sh
-https://nano.to/nano_3gf57qk4agze3ozwfhe8w6oap3jmdb4ofe9qo1ra3wcs5jc888rwyt61ymea
+https://nano.to/nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o
 ```
 
 Example with a Username:
@@ -142,7 +142,7 @@ When creating Checkout pages with POST requests (see above) pass a 'webhook_url'
 The API currently supports the following URI schema:
 
 ```
-nano:nano_3gf57qk4agze3ozwfhe8w6oap3jmdb4ofe9qo1ra3wcs5jc888rwyt61ymea?amount=1000
+nano:nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o?amount=1000
 ```
 
 The amount is NOT in MEGA (not RAW). See this [issue](https://github.com/formsend/nano.to/issues/4) for more info.
@@ -430,7 +430,7 @@ Nano.to Link: [nano.to/moon](https://nano.to/moon?title=Donate&suggest=Nice%20Jo
 
 ```
 # Nano
-nano_3gf57qk4agze3ozwfhe8w6oap3jmdb4ofe9qo1ra3wcs5jc888rwyt61ymea
+nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o
 
 # Bitcoin
 bc1qcgvew2a7ta3f7xy5999tdwyd8clrvdtpe2uvj5
