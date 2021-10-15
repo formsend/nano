@@ -92,9 +92,14 @@ Example response:
 
 You can check the data of a Checkout within it's lifespan by appending '?json=true' to the 'url' as a GET request. 
 
-### Be Notififed Of Payments
+```
+GET: https://api.nano.to/checkout/666ee7bf26a?json=true
+```
+---
 
-Best way is to provide a 'webhook_url' via POST request. The Webhook Payload will look like this:
+### Be Notififed Of Nano.to Payments with Webhooks
+
+When creating Checkout pages with via POST request (see above) pass 'webhook_url' param. The URL will recieve a HTTP POST requests from Nano.to, when a payment is made from a Nano.to Checkout page. The Webhook JSON body will look like this:
 
 ```javascript
 {
@@ -126,10 +131,6 @@ Best way is to provide a 'webhook_url' via POST request. The Webhook Payload wil
         namespace: 'joemama'
     }
 }
-```
-
-```
-GET: https://api.nano.to/checkout/666ee7bf26a?json=true
 ```
 
 **Note:** While in Beta, API data structure may change. Checkouts data is stored in-memory and expire after 12 hours.
