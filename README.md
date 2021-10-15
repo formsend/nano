@@ -305,6 +305,7 @@ Response
 		"timestamp": null,
 		"amount_raw": "21120000000000000000000000000"
 	},
+	// {..}
 ]
 ```
 
