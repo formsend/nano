@@ -2,7 +2,7 @@
 
 # **[Nano.to](https://nano.to) is a free crypto payment checking API built for the NANO blockchain.** 
 
-Use this API to create payment pages (like Stripe Checkout), Check for payments, and more. Accesible from any internet connected device with a modern web browser. Anonymous, no account or API key required to use.
+Use this API to create payment pages (like Stripe Checkout) for NANO payments. Accesible from any internet connected device with a modern web browser. Anonymous, no account or API key required to use.
 
 Launched **September 15th, 2021**.  **We're still in Beta**. API is stable. More endpoints and complex operations are planned in the future. Enterprise planned for late 2022.
 
