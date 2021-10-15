@@ -135,25 +135,6 @@ When creating Checkout pages with via POST request (see above) pass 'webhook_url
 
 **Note:** While in Beta, API data structure may change. Checkouts data is stored in-memory and expire after 12 hours.
 
-### Check Username Status
-
-You can check the status and expiration of any Username by appending '?check=true' to the url. Even if you do not own it.
-
-For example:
-
-```
-https://nano.to/moon?check=true
-```
-
-Gives us the following response
-
-```
-{
-  "name": "moon",
-  "status": "Active",
-  "expires": "September 16, 2030 7:27 PM EST",
-  "created": "September 15, 2021 7:27 PM EST"
-}
 ```
 
 ### RAW Amount in QR Codes (Natrium Support)
@@ -241,6 +222,30 @@ You can pass URL query parameters to change your request. Our API supports passi
 Demo: https://api.nano.to/price
 
 Demo (Advanced): https://api.nano.to/price?symbol=ETH&currency=CYN
+
+---
+
+## GET: Nano Username 
+
+Usernames are aliases for NANO addresses. You can rent one [here](https://nano.to).
+
+```bash
+https://api.nano.to/name/moon
+```
+
+Response
+
+```
+{
+	"id": "0c873b370ee",
+	"status": "Active",
+	"address": "nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o",
+	"namespace": "moon",
+	"expires": "September 16, 2030 7:27 PM",
+	"created": "September 15, 2021 7:27 PM",
+	"updated": "September 17, 2021 8:39 PM"
+}
+```
 
 ---
 
