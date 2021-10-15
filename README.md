@@ -209,7 +209,7 @@ Response
 }
 ```
 
-You can pass URL query parameters to change your request. Our API supports passing a **symbol** param to change the Crypto and a **currency** param to change the FIAT currency. 
+You can pass URL query parameters to change your request. 
 
 **Params**
 
