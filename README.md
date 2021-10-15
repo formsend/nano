@@ -428,7 +428,7 @@ Contributions, issues and feature requests are welcome! Feel free to check [issu
 
 We accept Crypto donations at the following addresses:
 
-Nano.to Link: [nano.to/moon](https://nano.to/moon?title=Donate&suggest=Nice%20Job:10,Keep%20it%20up:25,Nice%20UI:50,Nano%20to%20Moon%20%F0%9F%9A%80:100?success_url=https://assets.entrepreneur.com/content/3x2/2000/20141106185423-5-powerful-ways-give-thanks-your-people.jpeg&cancel_url=https://github.com/formsend/nano)
+Nano.to Link: [nano.to/moon](https://nano.to/moon?title=Donate&suggest=Nice%20Job:10,Keep%20it%20up:25,Nice%20UI:50,Nano%20to%20Moon%20%F0%9F%9A%80:100?success_url=https://assets.entrepreneur.com/content/3x2/2000/20141106185423-5-powerful-ways-give-thanks-your-people.jpeg&cancel=https://github.com/formsend/nano)
 
 ```
 # Nano
