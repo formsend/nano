@@ -402,3 +402,48 @@ If no transaction is found, the response will be false.
 **Params**
 
 No additional params.
+
+---
+
+## 👤 Author
+
+**Formsend.org**
+
+* Github: [@formsend](https://github.com/formsend)
+* Website: [https://formsend.org](https://formsend.org)
+
+---
+
+## 🤝 Contributing
+
+Give a ⭐️ if this project helped you!
+
+Contributions, issues and feature requests are welcome! Feel free to check [issues page](https://github.com/formsend/nano/issues).
+
+---
+
+## ♥️ Donate 
+
+We accept Crypto donations at the following addresses:
+
+Nano.to Link: [nano.to/moon](https://nano.to/moon?title=Donate&success_url=https://media3.giphy.com/media/vCKC987OpQAco/giphy.gif&description=This%20is%20a%20live%20test.%20This%20NANO%20address%20is%20the%20nano.to%20official%20address.)
+
+```
+# Nano
+nano_3gf57qk4agze3ozwfhe8w6oap3jmdb4ofe9qo1ra3wcs5jc888rwyt61ymea
+
+# Bitcoin
+bc1qcgvew2a7ta3f7xy5999tdwyd8clrvdtpe2uvj5
+
+# Doge
+D9U1FLygkMydx3DE2sXgnuFpHm7ePm3Zwe
+
+# Ethereum
+0xdD4691Dc9562FB262e4b2076bE255303243f271d
+```
+
+---
+
+## Stargazers
+
+[![Stargazers over time](https://starchart.cc/formsend/nano.svg)](https://starchart.cc/formsend/nano)
