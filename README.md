@@ -135,7 +135,7 @@ When creating Checkout pages with via POST request (see above) pass 'webhook_url
 
 **Note:** While in Beta, API data structure may change. Checkouts data is stored in-memory and expire after 12 hours.
 
-```
+---
 
 ### RAW Amount in QR Codes (Natrium Support)
 
@@ -162,7 +162,6 @@ Clicking (or Tapping) the QR Code while using Raw mode will open Natrium and aut
 ---
 
 # Advanced Usage (API)
-
 
 ### Base URL
 
@@ -261,17 +260,20 @@ Response
 
 ```javascript
 {
-	"balance": "0.215288",
-	"block_count": "244",
+	"balance": "0.794048",
+	"block_count": "248",
 	"account_version": "2",
-	"confirmation_height": "244",
+	"confirmation_height": "248",
 	"representative": "nano_3kqdiqmqiojr1aqqj51aq8bzz5jtwnkmhb38qwf3ppngo8uhhzkdkn7up7rp",
 	"weight": "0",
-	"pending": "0",
-	"balance_raw": "215288000000000000000000000000",
-	"pending_raw": "0",
-	"usd_rate": "5.43",
-	"usd_value": "1.17"
+	"pending": "0.02064",
+	"balance_raw": "794048000000000000000000000000",
+	"pending_raw": "20640000000000000000000000000",
+	"usd_rate": "5.40",
+	"usd_value": "4.29",
+	"address": "nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o",
+	"username": "moon",
+	"aliases": [ "formsend", "moon" ]
 }
 ```
 
