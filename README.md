@@ -92,6 +92,42 @@ Example response:
 
 You can check the data of a Checkout within it's lifespan by appending '?json=true' to the 'url' as a GET request. 
 
+### Be Notififed Of Payments
+
+Best way is to provide a 'webhook_url' via POST request. The Webhook Payload will look like this:
+
+```javascript
+{
+    id: '6e9d1f58c40',
+    status: 'complete',
+    amount: 1,
+    method: {
+        symbol: 'nano',
+        address: 'nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o',
+        name: 'Nano',
+        rate: '5.43262',
+        amount: '0.18621',
+        value: '1.01',
+        raw: false
+    },
+    plan: {
+        price: 1,
+        name: '1 Month'
+    },
+    block: {
+        type: 'pending',
+        amount: '0.18621',
+        hash: '6EE79D2BA2A89951798A6677368E0064CCB61464AF9003DE88F7E6B68BAEC694',
+        source: 'nano_19o64g3cy484nwfen76tfzz94icr1wn9bccw3ruefaham6x5hggpf6pz185x',
+        timestamp: null,
+        amount_raw: '186210000000000000000000000000'
+    },
+    metadata: {
+        namespace: 'joemama'
+    }
+}
+```
+
 ```
 GET: https://api.nano.to/checkout/666ee7bf26a?json=true
 ```
