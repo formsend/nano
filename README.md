@@ -148,11 +148,9 @@ Clicking (or Tapping) the QR Code while using Raw mode will open Natrium and aut
 
 ### Base URL
 
-```bash
-https://api.nano.to
-```
+***https://api.nano.to***
 
-The API is accesed only on HTTPS by GET or POST request. You can use the browser for most GET endpoints. POST requests require something like [Postman](https://www.postman.com/) or a backend server.
+The API is accesed only on HTTPS by GET or POST request. You can use the browser for most GET endpoints. POST requests require something like [Postman](https://www.postman.com/) or a backend server. 
 
 ---
 
@@ -221,16 +219,17 @@ Response
 
 ```javascript
 {
-	"balance": "0",
-	"block_count": "213",
+	"balance": "0.215288",
+	"block_count": "244",
 	"account_version": "2",
-	"confirmation_height": "213",
+	"confirmation_height": "244",
 	"representative": "nano_3kqdiqmqiojr1aqqj51aq8bzz5jtwnkmhb38qwf3ppngo8uhhzkdkn7up7rp",
 	"weight": "0",
-	"pending": "42166000000000000000000000000",
-	"balance_raw": "0",
-	"usd_rate": "5.33",
-	"usd_value": "0.00"
+	"pending": "0",
+	"balance_raw": "215288000000000000000000000000",
+	"pending_raw": "0",
+	"usd_rate": "5.43",
+	"usd_value": "1.17"
 }
 ```
 
@@ -288,20 +287,20 @@ Response
 	{
 		"type": "state",
 		"representative": "nano_3kqdiqmqiojr1aqqj51aq8bzz5jtwnkmhb38qwf3ppngo8uhhzkdkn7up7rp",
-		"link": "B9A32DE4243BEC0D7FC6BD86E12A8B06335A4556B0F7A83080F1591C54631B1C",
-		"balance": "0",
-		"previous": "AC0B2708ECDF215AC35C5E929AE769F8C3CBFFB6DC146C5372D3354EC0F4E0CB",
-		"subtype": "send",
-		"account": "nano_3gf57qk4agze3ozwfhe8w6oap3jmdb4ofe9qo1ra3wcs5jc888rwyt61ymea",
-		"amount": "0.106144",
-		"local_timestamp": "1633580511",
-		"height": "213",
-		"hash": "5B08707243334F86973D2FB99E1A7FC76EA2CD2E7EE4FB2FA3B2F09D8D3FBFFD",
-		"work": "63368d538ef96743",
-		"signature": "D0B7DC1AB23B972E7FB04A2BE169FB8DDDDD09F183AB7660EC3DDD0FA2BBBCE5B1BE7A33799BCF10F90C3C700973BADD877A241140716F26B3A2B57820321503",
+		"link": "F082A253FD6BD1376F28256A0F342CBD5FF1A3A8848359487119EA10EC06CF09",
+		"balance": "0.215288",
+		"previous": "F082A253FD6BD1376F28256A0F342CBD5FF1A3A8848359487119EA10EC06CF09",
+		"subtype": "receive",
+		"account": "nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o",
+		"amount": "0.02143",
+		"local_timestamp": "1634161570",
+		"height": "244",
+		"hash": "94E74C2EDAE153C181858BD28CFB67BA990EC8D1C43427658A118C947121A995",
+		"work": "610bb7829e958415",
+		"signature": "E09B7AF936EE4CE248630F4D03407B5BB40E258FC06B841472A30FE4FF423962F5E2201BAB321B39C10C250169D8033EB1600D9D58E39B271B2B58CC7CDB9508",
 		"timestamp": null,
-		"balance_raw": "0",
-		"amount_raw": "106144000000000000000000000000"
+		"balance_raw": "215288000000000000000000000000",
+		"amount_raw": "21430000000000000000000000000"
 	},
 	// {...}
 ]
@@ -327,30 +326,31 @@ https://api.nano.to/payment/[NANO_ADDRESS]/[AMOUNT]
 https://api.nano.to/payment/nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o/0.02143
 ```
 
-Amount must be in decimal (MEGA) not RAW.
+**Amount must be in decimal (MEGA) not RAW.**
 
 Response
 
 ```javascript
 {
 	"type": "state",
-	"representative": "nano_3zapp5z141qpjipsb1jnjdmk49jwqy58i6u6wnyrh6x7woajeyme85shxewt",
-	"link": "B2C99D213874759E8CC34C3156E86BC58E38F37D9491977515A7E73FE591ECC5",
-	"balance": "0.067071",
-	"previous": "968DEFD7BC9551C74586B65BE012F0B31CDC66EAC999802872B3DFFA508D8692",
+	"representative": "nano_3kqdiqmqiojr1aqqj51aq8bzz5jtwnkmhb38qwf3ppngo8uhhzkdkn7up7rp",
+	"link": "F082A253FD6BD1376F28256A0F342CBD5FF1A3A8848359487119EA10EC06CF09",
+	"balance": "0.215288",
+	"previous": "F082A253FD6BD1376F28256A0F342CBD5FF1A3A8848359487119EA10EC06CF09",
 	"subtype": "receive",
-	"account": "nano_3gf57qk4agze3ozwfhe8w6oap3jmdb4ofe9qo1ra3wcs5jc888rwyt61ymea",
-	"amount": "0.02235",
-	"local_timestamp": "1632343456",
-	"height": "201",
-	"hash": "10144EE93B2C6E60F3813F5667BDCC95C94D7C33237C6E80FA0209FC6EA4C18A",
-	"work": "5ba5ff6ee5183292",
-	"signature": "9408250F9FEEC2183384D2B14392AA3F0ED8868ABDF53FD266B66DED473118DBD4045789E52EFE3D9139666A179CDE55538DCC6F83FDC753ED6974264D9B5207",
-	"timestamp": "1632343457208",
-	"balance_raw": "67071000000000000000000000000",
-	"amount_raw": "22350000000000000000000000000"
+	"account": "nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o",
+	"amount": "0.02143",
+	"local_timestamp": "1634161570",
+	"height": "244",
+	"hash": "94E74C2EDAE153C181858BD28CFB67BA990EC8D1C43427658A118C947121A995",
+	"work": "610bb7829e958415",
+	"signature": "E09B7AF936EE4CE248630F4D03407B5BB40E258FC06B841472A30FE4FF423962F5E2201BAB321B39C10C250169D8033EB1600D9D58E39B271B2B58CC7CDB9508",
+	"balance_raw": "215288000000000000000000000000",
+	"amount_raw": "21430000000000000000000000000"
 }
 ```
+
+Example: [https://api.nano.to/payment/nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o/0.02143](https://api.nano.to/payment/nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o/0.02143)
 
 If no transaction is found, the response will be false.
 
