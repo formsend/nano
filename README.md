@@ -99,7 +99,7 @@ GET: https://api.nano.to/checkout/666ee7bf26a?json=true
 
 ### Payments Notifications with Webhooks
 
-When creating Checkout pages with via POST request (see above) pass 'webhook_url' param. The URL will recieve a HTTPS POST requests from Nano.to, when a payment is made using a Nano.to Checkout page. The Webhook JSON body will look like this:
+When creating Checkout pages with POST requests (see above) pass a 'webhook_url' param in the body. The URL provided will recieve a HTTPS POST request from Nano.to, when a payment is made using a Nano.to Checkout page. The Webhook JSON body will look like this:
 
 ```javascript
 {
