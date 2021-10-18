@@ -211,7 +211,7 @@ Response
 }
 ```
 
-You can pass URL query parameters to change your request. **Bonus** You can get other crypto prices as well.
+You can pass URL query parameters to change your request. **Bonus:** You can get other crypto prices as well.
 
 **Params**
 
