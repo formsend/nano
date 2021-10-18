@@ -145,7 +145,7 @@ The API currently supports the following URI schema:
 nano:nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o?amount=1000
 ```
 
-The amount is NOT in MEGA (not RAW). See this [issue](https://github.com/formsend/nano.to/issues/4) for more info.
+The amount in MEGA (not RAW). See this [issue](https://github.com/formsend/nano.to/issues/4) for more info.
 
 To force RAW, you can pass an optional url param to force the API to generate RAW friendly QR Codes. 
 
