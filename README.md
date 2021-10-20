@@ -16,7 +16,7 @@ Launched **September 15th, 2021**.  **We're still in Beta**. API is stable. More
 
 Bounty: 1 NANO
 
-Send a PR [request](https://github.com/formsend/nano/pulls).
+Send a Pull [Request](https://github.com/formsend/nano/pulls).
 
 # Basic Usage
 
