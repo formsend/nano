@@ -12,6 +12,12 @@ Launched **September 15th, 2021**.  **We're still in Beta**. API is stable. More
 
 ### Live Demo: [nano.to/moon](https://nano.to/moon?title=Github%20Demo&success_url=https://media3.giphy.com/media/vCKC987OpQAco/giphy.gif&description=This%20is%20a%20live%20test.%20This%20NANO%20address%20is%20the%20nano.to%20official%20address.&success_url=https://media3.giphy.com/media/vCKC987OpQAco/giphy.gif&cancel_url=https://github.com/formsend/nano)
 
+# Table of Contents
+
+Bounty: 1 NANO
+
+Send a PR [request](https://github.com/formsend/nano/pulls).
+
 # Basic Usage
 
 ```sh
