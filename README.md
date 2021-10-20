@@ -417,8 +417,6 @@ Response
 }
 ```
 
-Example: [https://api.nano.to/payment/nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o/0.02143](https://api.nano.to/payment/nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o/0.02143)
-
 If no transaction is found, the response will be false.
 
 **Params**
