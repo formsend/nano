@@ -54,7 +54,7 @@ All Options:
 The same as before, and more advanced params can be passed in the body. 
 
 ```
-POST: https://nano.to/[NANO_ADDRESS_OR_USERNAME]
+https://nano.to/[NANO_ADDRESS_OR_USERNAME]
 ```
 
 ```javascript
@@ -108,7 +108,7 @@ Add a 'webhook_url' param in a POST request body to recieve a HTTPS POST request
     amount: 1,
     method: {
         symbol: 'nano',
-        address: 'nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o',
+        address: '[YOUR_ADDRESS]',
         name: 'Nano',
         rate: '5.43262',
         amount: '0.18621',
@@ -122,8 +122,8 @@ Add a 'webhook_url' param in a POST request body to recieve a HTTPS POST request
     block: {
         type: 'pending',
         amount: '0.18621',
-        hash: '6EE79D2BA2A89951798A6677368E0064CCB61464AF9003DE88F7E6B68BAEC694',
-        source: 'nano_19o64g3cy484nwfen76tfzz94icr1wn9bccw3ruefaham6x5hggpf6pz185x',
+        hash: '6EE79D2BA2A8995179......',
+        source: '[THEIR_ADDRESS]',
         timestamp: null,
         amount_raw: '186210000000000000000000000000'
     },
