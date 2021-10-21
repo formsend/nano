@@ -1,6 +1,6 @@
 ![Cover](https://raw.githubusercontent.com/formsend/nano/master/.github/banner.png)
 
-# **Free [NANO](https://nano.org) Payment Platform & Toolkit API** 
+# **Free NANO Blockchain Payment API** 
 
 Use this API to create payment pages (like Stripe Checkout) for NANO payments. Accessible from any internet connected device with a modern web browser. Anonymous, no account or API key required to use.
 
@@ -17,17 +17,16 @@ Launched **September 15th, 2021**.  **We're still in Beta**. API is stable. More
 * [Customize](#customize)
 	* [Checkout Pages](#post-checkout-pages-more-secure)
 	* [Payments Notifications with Webhooks](#payments-notifications-with-webhooks)
-	* [RAW Amount in QR Codes](#raw-amount-in-qr-codes-natrium-support)
 * [Advanced Usage (API)](#advanced-usage-api)
 	* [Base URL](#base-url)
 	* [Authentication](#authentication)
 	* [Rate Limiting](#rate-limiting)
-	* [Live NANO Price](#get-live-nano-price)
-	* [Nano Username](#get-nano-username)
+	* [NANO Price](#get-live-nano-price)
+	* [NANO Username](#get-nano-username)
 	* [NANO Address Balance](#get-nano-address-balance)
 	* [NANO Address Pending Blocks](#get-nano-address-pending-blocks)
 	* [NANO Address History Blocks](#get-nano-address-history-blocks)
-	* [NANO Transaction By Amount](#get-nano-transaction-by-amount)
+	* [NANO Find Block By Address & Amount](#get-nano-transaction-by-amount)
 * [Author](#-author)
 * [Contributing](#-contributing)
 * [Donate](#%EF%B8%8F-donate)
