@@ -17,6 +17,7 @@ Launched **September 15th, 2021**.  **We're still in Beta**. API is stable. More
 * [Customize](#customize)
 	* [Checkout Pages](#post-checkout-pages-more-secure)
 	* [Payments Notifications with Webhooks](#payments-notifications-with-webhooks)
+	* [Trust Wallet Support] (#trust-wallet-support)
 * [Advanced Usage (API)](#advanced-usage-api)
 	* [Base URL](#base-url)
 	* [Authentication](#authentication)
