@@ -155,17 +155,17 @@ Add a 'webhook_url' param in a POST request body to receive a HTTPS POST request
 
 ---
 
-### RAW Amount in QR Codes (Natrium Support)
+### Trust Wallet Support
 
-The API currently supports the following URI schema:
+The API supports by default the official NANO URI schema:
 
 ```
-nano:nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o?amount=1000
+nano:(nano|xrb)_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o?amount=186210000000000000000000000000
 ```
 
-The amount in decimal, i.e MEGA (not RAW). See this [issue](https://github.com/formsend/nano.to/issues/4) for more info.
+The amount value is in RAW, which Natrium and other wallets support outfilling the values. Trust Wallet does NOT support RAW amount.
 
-To force RAW, you can pass an optional url param to force the API to generate RAW friendly QR Codes. 
+To force the use of decimal value (MEGA) in QR Codes, pass '?raw=false' URL param.
 
 ```
 https://nano.to/moon?raw=true
