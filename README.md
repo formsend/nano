@@ -25,7 +25,7 @@ Launched **September 15th, 2021**. API is stable. More endpoints and complex ope
 	* [Authentication](#authentication)
 	* [Rate Limiting](#rate-limiting)
 	* [NANO Price](#get-live-nano-price)
-	* [NANO Username](#nano-usernames)
+	* [NANO Username](#get-nano-usernames)
 	* [NANO Address Balance](#get-nano-address-balance)
 	* [NANO Address Pending Blocks](#get-nano-address-pending-blocks)
 	* [NANO Address History Blocks](#get-nano-address-history-blocks)
