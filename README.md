@@ -18,7 +18,7 @@ Launched **September 15th, 2021**.  **We're still in Beta**. API is stable. More
 * [Basic Usage](#basic-usage)
 * [Customize](#customize)
 	* [Checkout Pages](#post-checkout-pages-more-secure)
-	* [Payments Notifications with Webhooks](#payments-notifications-with-webhooks)
+	* [Payment Notifications](#payments-notifications-with-webhooks)
 	* [Trust Wallet Support](#trust-wallet-support)
 * [Advanced Usage (API)](#advanced-usage-api)
 	* [Base URL](#base-url)
@@ -121,7 +121,7 @@ GET: https://api.nano.to/checkout/666ee7bf26a?json=true
 
 ### Payments Notifications with Webhooks
 
-Add a 'webhook_url' param in a POST request body to receive a HTTPS POST request when a payment is made using a Nano.to Checkout page. The Webhook JSON body will look like this:
+The recommended way to be notified of incoming payments is by passing a 'webhook_url' param in the body of a POST request. The JSON payload will look like this:
 
 ```javascript
 {
@@ -154,7 +154,7 @@ Add a 'webhook_url' param in a POST request body to receive a HTTPS POST request
 }
 ```
 
-**Note:** While in Beta, API data structure may change. Checkouts data is stored in-memory and expires after 12 hours.
+**Note:** While in Beta, API data structure may change without notice. Checkouts data is stored in-memory and expires after 12 hours.
 
 ---
 
