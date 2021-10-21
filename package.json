@@ -1,0 +1,25 @@
+{
+  "main": "code/index.js",
+  "name": "@formsend/nano",
+  "author": {
+    "name": "Formsend",
+    "email": "hello@forward.miami"
+  },
+  "bugs": {
+    "url": "https://github.com/formsend/nano/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "axios": "^0.22.0",
+    "big.js": "^6.1.1"
+  },
+  "deprecated": false,
+  "description": "A super simple NANO crypto currency blockchain API.",
+  "homepage": "https://github.com/formsend/nano",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/formsend/nano.git"
+  },
+  "version": "0.0.1"
+}
