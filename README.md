@@ -230,7 +230,9 @@ Response
 }
 ```
 
-You can pass URL query parameters to change your request. **Bonus:** You can get other crypto prices as well.
+You can pass URL query parameters to change your request. 
+
+**Bonus:** You pass get other crypto prices as well.
 
 **Params**
 
@@ -239,15 +241,17 @@ You can pass URL query parameters to change your request. **Bonus:** You can get
 |   symbol | string |  Crypto symbol. **Default** NANO |
 |   currency | string |  [ISO-4217](https://docs.1010data.com/1010dataReferenceManual/DataTypesAndFormats/currencyUnitCodes.html) symbol. **Default** USD |
 
-Demo: https://api.nano.to/price
+Example: https://api.nano.to/price
 
-Demo (Advanced): https://api.nano.to/price?symbol=ETH&currency=CYN
+Example 2: https://api.nano.to/price?symbol=ETH&currency=CYN
+
+Example 3: https://api.nano.to/price?symbol=SHIB&currency=CAD
 
 ---
 
-## GET: Nano Username 
+## GET: NANO Usernames
 
-Usernames are aliases for NANO addresses. You can rent one [here](https://nano.to).
+Usernames are aliases for NANO addresses. You can rent one [here](https://nano.to). 
 
 ```bash
 https://api.nano.to/name/moon
@@ -335,7 +339,7 @@ Demo: https://api.nano.to/pending/moon
 
 ## GET: NANO Address History Blocks
 
-Array of historical transactions of any NANO address. For now, API only goes back 20 transactions.  
+Array of historical transactions of any NANO address. For now, API only goes back 50 transactions.  
 
 ```bash
 https://api.nano.to/history/[NANO_ADDRESS]
