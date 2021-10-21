@@ -70,7 +70,7 @@ All Options:
 
 ## POST: Checkout Pages (More Secure)
 
-The same as before, and more advanced params can be passed in the body. 
+The same as before, and more advanced params can be passed in the body of a POST request.
 
 ```
 https://nano.to/[NANO_ADDRESS_OR_USERNAME]
