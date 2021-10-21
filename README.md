@@ -2,11 +2,11 @@
 
 # **Free [NANO](https://nano.org) Payment Platform & Toolkit API** 
 
-Use this API to create payment pages (like Stripe Checkout) for NANO payments. Accesible from any internet connected device with a modern web browser. Anonymous, no account or API key required to use.
+Use this API to create payment pages (like Stripe Checkout) for NANO payments. Accessible from any internet connected device with a modern web browser. Anonymous, no account or API key required to use.
 
 Launched **September 15th, 2021**.  **We're still in Beta**. API is stable. More endpoints and complex operations are planned in the future. Enterprise planned for late 2022.
 
-[NANO](https://nano.org) is a fee-less, decentralized crypto currency. **We did not built or own NANO.** We simply built a service on top of it. In the process, these public API endpoints were made available. 
+[NANO](https://nano.org) is a fee-less, decentralized crypto currency. **We did not build or own NANO.** We simply built a service on top of it. In the process, these public API endpoints were made available. 
 
 **We can't wait to see what you build with it.**
 
@@ -110,7 +110,7 @@ Example response:
 }
 ```
 
-You can check the data of a Checkout within it's lifespan by appending '?json=true' to the 'url' as a GET request. 
+You can check the data of a Checkout within its lifespan by appending '?json=true' to the 'url' as a GET request. 
 
 ```
 GET: https://api.nano.to/checkout/666ee7bf26a?json=true
@@ -119,7 +119,7 @@ GET: https://api.nano.to/checkout/666ee7bf26a?json=true
 
 ### Payments Notifications with Webhooks
 
-Add a 'webhook_url' param in a POST request body to recieve a HTTPS POST request when a payment is made using a Nano.to Checkout page. The Webhook JSON body will look like this:
+Add a 'webhook_url' param in a POST request body to receive a HTTPS POST request when a payment is made using a Nano.to Checkout page. The Webhook JSON body will look like this:
 
 ```javascript
 {
@@ -153,7 +153,7 @@ Add a 'webhook_url' param in a POST request body to recieve a HTTPS POST request
 }
 ```
 
-**Note:** While in Beta, API data structure may change. Checkouts data is stored in-memory and expire after 12 hours.
+**Note:** While in Beta, API data structure may change. Checkouts data is stored in-memory and expires after 12 hours.
 
 ---
 
@@ -189,7 +189,7 @@ Clicking (or Tapping) the QR Code while using Raw mode will open Natrium and aut
 https://api.nano.to
 ```
 
-The API is accesed only on HTTPS by GET or POST request. You can use the browser for most GET endpoints. POST requests require something like [Postman](https://www.postman.com/) or a backend server. 
+The API is accessed only on HTTPS by GET or POST request. You can use the browser for most GET endpoints. POST requests require something like [Postman](https://www.postman.com/) or a backend server. 
 
 ---
 
@@ -207,7 +207,7 @@ Your IP Address is your API key. Don't abuse it.
 
 On most endpoints, you can expect to have 5 requests, per second. **This is plenty for most use cases.** Hitting the limit multiple times per day may result in longer lockouts or permanent ban.
 
-If you need lots of simultaneous API calls, please let us know in advanced. 
+If you need lots of simultaneous API calls, please let us know in advance. 
 
 Email [Formsend](mailto:hello@forward.miami?subject=Nano.to&nbsp;Api&nbsp;Use), subject line 'Nano.to Api Use'. 
 
@@ -215,7 +215,7 @@ Email [Formsend](mailto:hello@forward.miami?subject=Nano.to&nbsp;Api&nbsp;Use), 
 
 ## GET: Live NANO Price
 
-Get current NANO price in USD. The price is refreshed every 60 seconds. CoinMarketCap is used for price data.
+Get current NANO price in USD. The price refreshes every 60 seconds. CoinMarketCap is used for price data.
 
 ```bash
 https://api.nano.to/price
@@ -383,7 +383,7 @@ Demo: https://api.nano.to/history/moon
 
 ## GET: NANO Transaction By Amount
 
-Check if a NANO address has received a payment with a specific amount. **Searches Pending & History.** This is useful if you want to built your own payment checker.
+Check if a NANO address has received a payment with a specific amount. **Searches Pending & History.** This is useful if you want to build your own payment checker.
 
 ```bash
 https://api.nano.to/payment/[NANO_ADDRESS]/[AMOUNT]
