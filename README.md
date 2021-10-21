@@ -4,7 +4,7 @@
 
 Use this API to create payment pages (like Stripe Checkout) for NANO payments. Accessible from any internet connected device with a modern web browser. Anonymous, no account or API key required to use.
 
-Launched **September 15th, 2021**.  **We're still in Beta**. API is stable. More endpoints and complex operations are planned in the future. Enterprise planned for late 2022.
+Launched **September 15th, 2021**. API is stable. More endpoints and complex operations are planned in the future. Enterprise planned for late 2022.
 
 [NANO](https://nano.org) is a fee-less, decentralized crypto currency. 
 
