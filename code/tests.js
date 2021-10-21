@@ -26,7 +26,7 @@ function validate(name, value, type, output) {
 	var pending = await Nano.pending('nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o') 
 	validate( "Nano.pending()", pending, 'object')
 
-	var history = await Nano.history('nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o') 
+	var history = await Nano.history('nano_1xkyayfycettzcyhbexcmtqbhj5abbruq15urypzsnrby9s8nrhpj6fzxqcg') 
 	validate( "Nano.address()", history, 'object')
 
 	var rawAmount = '19424000000000000000000000000'
@@ -36,7 +36,7 @@ function validate(name, value, type, output) {
 	var convertToRaw =  Nano.toRaw(convertFromRaw)
 	validate( "Nano.toRaw()", convertToRaw, 'string')
 
-	var findBlockByAmount =  Nano.findBlockByAmount("nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o", history[0].amount)
+	var findBlockByAmount =  Nano.findBlockByAmount("nano_1xkyayfycettzcyhbexcmtqbhj5abbruq15urypzsnrby9s8nrhpj6fzxqcg", history[0].amount)
 	validate( "Nano.findBlockByAmount()", findBlockByAmount, 'object')
 
 })()

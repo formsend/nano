@@ -56,8 +56,8 @@ const Nano = {
      **/
     pending: async (address) => {
         if (!address) return new Error("First parameter, NANO Address is missing.")
-        var history = await Axios.get(`${Nano.url}/pending/${address}`)
-        return history.data
+        var pending = await Axios.get(`${Nano.url}/pending/${address}`, { maxContentLength: 52428890 })
+        return pending.data
     },
 
 
@@ -73,7 +73,7 @@ const Nano = {
      **/
     history: async (address) => {
         if (!address) return new Error("First parameter, NANO Address is missing.")
-        var history = await Axios.get(`${Nano.url}/history/${address}`)
+        var history = await Axios.get(`${Nano.url}/history/${address}`, { maxContentLength: 52428890 })
         return history.data
     },
 
