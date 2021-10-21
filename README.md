@@ -143,7 +143,6 @@ Add a 'webhook_url' param in a POST request body to receive a HTTPS POST request
         amount: '0.18621',
         hash: '6EE79D2BA2A8995179......',
         source: '[THEIR_ADDRESS]',
-        timestamp: null,
         amount_raw: '186210000000000000000000000000'
     },
     metadata: {
@@ -164,7 +163,7 @@ The API currently supports the following URI schema:
 nano:nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o?amount=1000
 ```
 
-The amount in MEGA (not RAW). See this [issue](https://github.com/formsend/nano.to/issues/4) for more info.
+The amount in decimal, i.e MEGA (not RAW). See this [issue](https://github.com/formsend/nano.to/issues/4) for more info.
 
 To force RAW, you can pass an optional url param to force the API to generate RAW friendly QR Codes. 
 
