@@ -6,9 +6,9 @@ Use this API to create payment pages (like Stripe Checkout) for NANO payments. A
 
 Launched **September 15th, 2021**.  **We're still in Beta**. API is stable. More endpoints and complex operations are planned in the future. Enterprise planned for late 2022.
 
-[NANO](https://nano.org) is a fee-less, decentralized crypto currency. **We did not build or own NANO.** We simply built a service on top of it. In the process, these public API endpoints were made available. 
+[NANO](https://nano.org) is a fee-less, decentralized crypto currency. **We did not build or own NANO.** We simply built a service on top of it. 
 
-**We can't wait to see what you build with it.**
+**We can't wait to see what you build.**
 
 ### Live Demo: [nano.to/moon](https://nano.to/moon?title=Github%20Demo&success_url=https://media3.giphy.com/media/vCKC987OpQAco/giphy.gif&description=This%20is%20a%20live%20test.%20This%20NANO%20address%20is%20the%20nano.to%20official%20address.&success_url=https://media3.giphy.com/media/vCKC987OpQAco/giphy.gif&cancel_url=https://github.com/formsend/nano)
 
@@ -284,9 +284,6 @@ Response
 {
 	"balance": "0.794048",
 	"block_count": "248",
-	"account_version": "2",
-	"confirmation_height": "248",
-	"representative": "nano_3kqdiqmqiojr1aqqj51aq8bzz5jtwnkmhb38qwf3ppngo8uhhzkdkn7up7rp",
 	"weight": "0",
 	"pending": "0.02064",
 	"balance_raw": "794048000000000000000000000000",
@@ -294,8 +291,7 @@ Response
 	"usd_rate": "5.40",
 	"usd_value": "4.29",
 	"address": "nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o",
-	"username": "moon",
-	"aliases": [ "formsend", "moon" ]
+	"username": "moon"
 }
 ```
 
@@ -324,7 +320,6 @@ Response
 		"amount": "0.02112",
 		"hash": "844FFE6D39D1F28673198E7C35A61C960148520FCBB8E2B2B0855C72D033FBF4",
 		"source": "nano_19o64g3cy484nwfen76tfzz94icr1wn9bccw3ruefaham6x5hggpf6pz185x",
-		"timestamp": null,
 		"amount_raw": "21120000000000000000000000000"
 	},
 	// {..}
@@ -360,12 +355,10 @@ Response
 		"subtype": "receive",
 		"account": "nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o",
 		"amount": "0.02143",
-		"local_timestamp": "1634161570",
 		"height": "244",
 		"hash": "94E74C2EDAE153C181858BD28CFB67BA990EC8D1C43427658A118C947121A995",
 		"work": "610bb7829e958415",
 		"signature": "E09B7AF936EE4CE248630F4D03407B5BB40E258FC06B841472A30FE4FF423962F5E2201BAB321B39C10C250169D8033EB1600D9D58E39B271B2B58CC7CDB9508",
-		"timestamp": null,
 		"balance_raw": "215288000000000000000000000000",
 		"amount_raw": "21430000000000000000000000000"
 	},
@@ -407,7 +400,6 @@ Response
 	"subtype": "receive",
 	"account": "nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o",
 	"amount": "0.02143",
-	"local_timestamp": "1634161570",
 	"height": "244",
 	"hash": "94E74C2EDAE153C181858BD28CFB67BA990EC8D1C43427658A118C947121A995",
 	"work": "610bb7829e958415",
