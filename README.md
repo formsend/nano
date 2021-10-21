@@ -1,6 +1,6 @@
 ![Cover](https://raw.githubusercontent.com/formsend/nano/master/.github/banner.png)
 
-# **[Nano.to](https://nano.to) is a free crypto payment API built for the NANO blockchain.** 
+# **Free [NANO](https://nano.org) Payment Platform & Toolkit API** 
 
 Use this API to create payment pages (like Stripe Checkout) for NANO payments. Accesible from any internet connected device with a modern web browser. Anonymous, no account or API key required to use.
 
