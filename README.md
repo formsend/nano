@@ -164,7 +164,7 @@ The API supports by default the official NANO URI schema:
 nano:(nano|xrb)_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o?amount=186210000000000000000000000000
 ```
 
-The amount value is in RAW, which Natrium and other wallets support outfilling the values. Trust Wallet does NOT support RAW amount.
+The amount value is in RAW, which Natrium and other wallets support auto populating the address and amount value. Trust Wallet does NOT support RAW amount.
 
 To force the use of decimal value (MEGA) in QR Codes, pass '?raw=false' URL param.
 
