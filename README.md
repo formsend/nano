@@ -171,11 +171,7 @@ The amount value is in RAW, which Natrium and other wallets support auto populat
 To force the use of decimal value (MEGA) in QR Codes, pass '?raw=false' URL param.
 
 ```
-https://nano.to/moon?raw=true
-```
-
-```
-https://nano.to/moon?title=Donate&price=10&raw=true
+https://nano.to/moon?title=Trust&price=10&raw=false
 ```
 
 Clicking (or Tapping) the QR Code while using Raw mode will open Natrium and automatically fill in amount and address, on most phones. 
