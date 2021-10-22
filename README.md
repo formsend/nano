@@ -60,20 +60,26 @@ Visit [https://nano.to](https://nano.to/) to reserve your Username.
 https://nano.to/[NANO_ADDRESS_OR_USERNAME]?title=Donate&price=50
 ```
 
-All Options:
+Available Options:
 
 ```bash
-?title=Donate
+https://nano.to/Moon?title=Donate
 &price=50
-&description=<p>HTML allowed</p>
+&donate=true
+&color=red,white
+&background=blue,red
+&image=https://media3.giphy.com/media/cnuNz0fTBIUGnx4F9T/giphy.gif
+&description=<p>HTML allowed 😎</p>
 &suggest=Basic:30,Premium:50
 &success_url=https://mywebsite.com/success?id={{id}}
 &cancel_url=https://mywebsite.com/
 ```
 
+Demo: [https://nano.to/Moon](https://nano.to/Moon?title=Donate%20&price=50%20&image=https://media3.giphy.com/media/cnuNz0fTBIUGnx4F9T/giphy.gif%20&description=%3Cp%3EHTML%20allowed%3C/p%3E%20&suggest=Basic:30,Premium:50%20&success_url=https://mywebsite.com/success?id={{id}}%20&cancel_url=https://mywebsite.com/)
+
 ## POST: Checkout Pages (More Secure)
 
-The same as before, and more advanced params can be passed in the body of a POST request.
+More advanced params can be passed in the body of a POST request.
 
 ```
 https://nano.to/[NANO_ADDRESS_OR_USERNAME]
@@ -94,11 +100,12 @@ axios.post('https://nano.to/[NANO_ADDRESS_OR_USERNAME]', {
         "name": "McDonalds",
         "logo": "https://www.tailorbrands.com/wp-content/uploads/2020/07/mcdonalds-logo.jpg"
     },
+    "image": "https://media3.giphy.com/media/cnuNz0fTBIUGnx4F9T/giphy.gif",
     "success_url": "https://mywebsite.com/success?id={{id}}&anotherParam=hello",
     "cancel_url": "https://google.com",
     "webhook_url": "https://mywebsite.com/secret-webhook",
     "webhook_secret": "my-super-secret",
-    "metadata": { "userId": "joemama" }
+    "metadata": { "userId": "joe-mama" }
 })
 ```
 
