@@ -219,7 +219,7 @@ Email [Formsend](mailto:hello@forward.miami?subject=Nano.to&nbsp;Api&nbsp;Use), 
 
 ## GET: Live NANO Price
 
-Get current NANO price in USD. The price refreshes every 60 seconds. CoinMarketCap is used for price data.
+Get current NANO price in USD. The price refreshes every 5 minutes. CoinMarketCap is used for price data.
 
 ```bash
 https://api.nano.to/price
