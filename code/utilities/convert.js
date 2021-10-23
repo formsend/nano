@@ -5,28 +5,38 @@ big.NE = -31;
 big.PE = 39;
 
 const RAW_IN_MEGA = new big('1000000000000000000000000000000');
-const MEGA_IN_RAW = new big('1').div(RAW_IN_MEGA);
-const MEGA_MIN_AMOUNT = MEGA_IN_RAW;
+//const MEGA_IN_RAW = new big('1').div(RAW_IN_MEGA);
+const MEGA_MIN_AMOUNT = new big('1').div(RAW_IN_MEGA);
 const RAW_MAX_AMOUNT = new big('340282366920938463463374607431768211455');
-const MEGA_MAX_AMOUNT = new big(RAW_MAX_AMOUNT).times(MEGA_IN_RAW);
+const MEGA_MAX_AMOUNT = new big(RAW_MAX_AMOUNT).div(RAW_IN_MEGA);
 
 module.exports = {
 
     fromRaw(raw) {
+        
+        if (raw === undefined) return new Error("First parameter, raw amount is missing.")
+        if (!parseInt(raw)) return new Error("First parameter, raw amount must be a whole number.")
+
         let rawBig;
+
         try {
+
             rawBig = new big(raw);
+            
+            if (rawBig.lt(0)) return new Error("First parameter, raw amount must not be negative.")
+            if (rawBig.gt(RAW_MAX_AMOUNT)) return new Error("First parameter, raw amount is too large.")
+
+            return rawBig.div(RAW_IN_MEGA).toString();
+
         } catch (error) {
             throw new Error('The raw amount is invalid.');
         }
-        return rawBig.mul(MEGA_IN_RAW).toString();
     },
     
     toRaw(mega) {
         
         if (mega === undefined) return new Error("First parameter, NANO amount is missing.")
-
-        if (!parseFloat(mega)) return new Error("First parameter, NANO amount must be a Number.")
+        if (!parseFloat(mega)) return new Error("First parameter, NANO amount must be a number.")
 
         mega = parseFloat(mega)
 
@@ -43,7 +53,7 @@ module.exports = {
             return megaBig.times(RAW_IN_MEGA).toString();
 
         } catch (error) {
-            return new Error('The mega amount is invalid.');
+            return new Error('The NANO amount is invalid.');
         }
     },
 
