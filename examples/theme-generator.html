@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nano.to Theme Generator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
+        <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <style>
+            * {
+                margin: 0;
+            }
+            .blocks {
+                display: flex;
+            }
+            .block {
+
+            }
+            iframe {
+                width: 100%;
+                height: 100vh;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app">
+            <div v-for="url in urls">
+                <iframe :src="url" frameborder="0"></iframe>
+            </div>
+            <h1 style="font-size: 80px; width: 100%; text-align: center; padding: 20px 0;">Let's get crazy!</h1>
+            <div v-for="url in urls2">
+                <iframe :src="url" frameborder="0"></iframe>
+            </div>
+        </div>
+        <script>
+	        var app = new Vue({
+				el: '#app',
+				data: { 
+                    message: '',
+                    urls: [],
+                    urls2: []
+                },
+                mounted() {
+                    this.load()
+                },
+                methods: {
+                    randomFromArray(items) {
+                        return items[Math.floor(Math.random()*items.length)]
+                    },
+                    async load() {
+                        /*
+                        * More colors means more API calls
+                        * Please don't nuke our API by accident
+                        * and get ip banned in the process.
+                        */
+                        var colors = [ 
+                            ['#e74c3c', '#c0392b'],
+                            ['#3498db', '#2980b9'],
+                            ['#e67e22', '#d35400'],
+                            ['#34495e', '#2c3e50'],
+                            ['#9b59b6', '#8e44ad'],
+                            ['#27ae60', '#95a5a6'],
+                            ['#000', '#311ac5'],
+                            ['#1abc9c', '#16a085'],
+                            ['#f39c12', '#f1c40f'],
+                        ]
+                        var flat = colors.flat()
+                        // var urls = []
+
+                        for (var color of colors) {
+                            var price = await axios.post('https://nano.to/Moon', {
+                                price: 10,
+                                color: "white,white",
+                                image: "https://files.muzli.space/2d7af141fab097859ef66de8d7c50932.jpeg",
+                                background: `${color[0]}, ${color[1]}`
+                            })
+                            this.urls.push(price.data.url)
+                        }
+
+
+                        for (var color of colors) {
+                            var price2 = await axios.post('https://nano.to/Moon', {
+                                price: 10,
+                                background: `${this.randomFromArray(flat)}, ${this.randomFromArray(flat)}`
+                            })
+                            this.urls2.push(price2.data.url)
+                        }
+
+                        this.urls = urls
+                    }
+                }
+			})
+        </script>
+    </body>
+</html>

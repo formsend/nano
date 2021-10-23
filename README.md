@@ -1,14 +1,16 @@
 ![Cover](https://raw.githubusercontent.com/formsend/nano/master/.github/banner.png)
 
-# **Free NANO Blockchain Payment API** 
+# **Nano.to, Free NANO Blockchain Payment API** 
 
-Use this API to create payment pages (like Stripe Checkout) for NANO payments. Accessible from any internet connected device with a modern web browser. Anonymous, no account or API key required to use.
+Use this API to create payment pages (like Stripe Checkout) for NANO crypto currency. Accessible from any internet connected device with a modern web browser. 
+
+Anonymous, no account or API key required to use.
 
 Launched **September 15th, 2021**. API is stable. More endpoints and complex operations are planned in the future. Enterprise planned for late 2022.
 
 [NANO](https://nano.org) is a fee-less, decentralized crypto currency. 
 
-**We did not build or own NANO.** We simply built a service on top of it. 
+**Note:** **We did not build or own NANO. We simply built a service on top of it.**
 
 **We can't wait to see what you build.**
 
@@ -16,11 +18,11 @@ Launched **September 15th, 2021**. API is stable. More endpoints and complex ope
 
 # Table of Contents
 * [Basic Usage](#basic-usage)
-* [Customize](#customize)
-	* [Checkout Pages](#post-checkout-pages-more-secure)
+* [Simple Example](#customize)
+	* [Advanced Example](#post-checkout-pages-more-secure)
 	* [Payment Notifications](#payments-notifications-with-webhooks)
 	* [Trust Wallet Support](#trust-wallet-support)
-* [Advanced Usage (API)](#advanced-usage-api)
+* [Nano.to API (Advanced Usage)](#advanced-usage-api)
 	* [Base URL](#base-url)
 	* [Authentication](#authentication)
 	* [Rate Limiting](#rate-limiting)
@@ -126,7 +128,7 @@ Example response:
 You can check the data of a Checkout within its lifespan by appending '?json=true' to the 'url' as a GET request. 
 
 ```
-GET: https://api.nano.to/checkout/666ee7bf26a?json=true
+https://api.nano.to/checkout/666ee7bf26a?json=true
 ```
 ---
 
@@ -241,7 +243,7 @@ Response
 
 You can pass URL query parameters to change your request. 
 
-**Bonus:** You pass get other crypto prices as well.
+**Bonus:** You can get other crypto prices.
 
 **Params**
 
