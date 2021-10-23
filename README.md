@@ -17,12 +17,12 @@ Launched **September 15th, 2021**. API is stable. More endpoints and complex ope
 ### Live Demo: [nano.to/moon](https://nano.to/moon?title=Github%20Demo&success_url=https://media3.giphy.com/media/vCKC987OpQAco/giphy.gif&description=This%20is%20a%20live%20test.%20This%20NANO%20address%20is%20the%20nano.to%20official%20address.&success_url=https://media3.giphy.com/media/vCKC987OpQAco/giphy.gif&cancel_url=https://github.com/formsend/nano)
 
 # Table of Contents
-* [Usage](#basic-usage)
-	* [Simple Example](#customize)
-	* [Advanced Example](#post-checkout-pages-more-secure)
+* [Get Started](#basic-usage)
+* [Customize](#customize)
+* [Advanced Example](#post-checkout-pages-more-secure)
 * [Payment Notifications](#payments-notifications-with-webhooks)
 * [Trust Wallet Support](#trust-wallet-support)
-* [Themes](#themes)
+* [Themes & Colors](#themes)
 * [Nano.to API (Advanced Usage)](#advanced-usage-api)
 	* [Base URL](#base-url)
 	* [Authentication](#authentication)
@@ -37,6 +37,7 @@ Launched **September 15th, 2021**. API is stable. More endpoints and complex ope
 * [Contributing](#-contributing)
 * [Donate](#%EF%B8%8F-donate)
 * [Stargazers](#stargazers)
+
 # Basic Usage
 
 ```sh
@@ -57,15 +58,7 @@ https://nano.to/Moon
 
 Visit [https://nano.to](https://nano.to/) to reserve your Username.
 
-# Simple Example (GET)
-
-Base url
-
-```sh
-https://nano.to/
-```
-
-Followed by your NANO Address or Username, with options to customize UI.
+# Customize
 
 ```sh
 https://nano.to/[NANO_ADDRESS_OR_USERNAME]?title=Donate&price=50
@@ -200,7 +193,7 @@ Clicking (or Tapping) the QR Code while using Raw mode will open Natrium and aut
 
 ---
 
-### Themes
+# Themes & Colors
 
 ![Cover](https://raw.githubusercontent.com/formsend/nano/master/.github/theme-1.png)
 
