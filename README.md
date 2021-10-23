@@ -18,8 +18,8 @@ Launched **September 15th, 2021**. API is stable. More endpoints and complex ope
 
 # Table of Contents
 * [Get Started](#basic-usage)
-* [Customize](#customize)
-* [Advanced Example](#post-checkout-pages-more-secure)
+* [Simple Example](#simple-usage)
+* [Advanced Example](#advanced-usage)
 * [Payment Notifications](#payments-notifications-with-webhooks)
 * [Trust Wallet Support](#trust-wallet-support)
 * [Themes & Colors](#themes--colors)
@@ -58,7 +58,7 @@ https://nano.to/Moon
 
 Visit [https://nano.to](https://nano.to/) to reserve your Username.
 
-# Customize
+# Simple Usage
 
 ```sh
 https://nano.to/[NANO_ADDRESS_OR_USERNAME]?title=Donate&price=50
@@ -83,7 +83,7 @@ https://nano.to/Moon?title=Donate
 
 Demo: [https://nano.to/Moon](https://nano.to/Moon?title=Donate%20&price=50%20&donate=true%20&color=white,white%20&background=blue,red%20&image=https://media3.giphy.com/media/cnuNz0fTBIUGnx4F9T/giphy.gif%20&description=%3Cp%3EHTML%20allowed%20%F0%9F%98%8E%3C/p%3E%20&suggest=Basic:30,Premium:50%20&success_url=https://mywebsite.com/success?id={{id}}%20&cancel_url=https://mywebsite.com/)
 
-## Advanced Example (POST)
+## Advanced Usage
 
 More advanced options can be used in the body of a POST request.
 
@@ -173,23 +173,9 @@ The recommended way to be notified of incoming payments is by passing a 'webhook
 
 ---
 
-### Trust Wallet Support
+### Accessibility
 
-The API supports by default the official NANO URI schema:
-
-```
-nano:(nano|xrb)_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o?amount=186210000000000000000000000000
-```
-
-The amount value is in RAW, which Natrium and other wallets support auto populating the address and amount value. Trust Wallet does NOT support RAW amount.
-
-To force the use of decimal value (MEGA) in QR Codes, pass '?raw=false' URL param.
-
-```
-https://nano.to/moon?title=Trust&price=10&raw=false
-```
-
-Clicking (or Tapping) the QR Code while using Raw mode will open Natrium and automatically fill in amount and address, on most phones. 
+Clicking (or Tapping) the QR Code will open Natrium and automatically fill in amount and address, on most phones. 
 
 ---
 
@@ -199,7 +185,7 @@ Clicking (or Tapping) the QR Code while using Raw mode will open Natrium and aut
 
 Customize colors and even add an image.
 
-### GET Request
+**GET Request**
 
 ```bash
 https://nano.to/Moon?color=red,white
@@ -209,7 +195,7 @@ https://nano.to/Moon?color=red,white
 
 **Note:** Using CSS colors with hashtags ex. #000000 is only supported via POST request.
 
-### POST Request
+**POST Request**
 
 ```javascript
 
@@ -223,15 +209,13 @@ axios.post('https://nano.to/[NANO_ADDRESS_OR_USERNAME]', {
 
 ---
 
-# Advanced Usage (API)
-
-### Base URL
+# Developer API
 
 ```
 https://api.nano.to
 ```
 
-The API is accessed only on HTTPS by GET or POST request. You can use the browser for most GET endpoints. POST requests require something like [Postman](https://www.postman.com/) or a backend server. 
+The API is accessed by GET or POST request via HTTPS. You can use the browser for most GET endpoints. POST requests require something like [Postman](https://www.postman.com/) or a backend server. 
 
 ---
 
