@@ -17,7 +17,7 @@ Launched **September 15th, 2021**. API is stable. More endpoints and complex ope
 ### Live Demo: [nano.to/moon](https://nano.to/moon?title=Github%20Demo&success_url=https://media3.giphy.com/media/vCKC987OpQAco/giphy.gif&description=This%20is%20a%20live%20test.%20This%20NANO%20address%20is%20the%20nano.to%20official%20address.&success_url=https://media3.giphy.com/media/vCKC987OpQAco/giphy.gif&cancel_url=https://github.com/formsend/nano)
 
 # Table of Contents
-* [Basic Usage](#basic-usage)
+* [Usage](#basic-usage)
 	* [Simple Example](#customize)
 	* [Advanced Example](#post-checkout-pages-more-secure)
 * [Payment Notifications](#payments-notifications-with-webhooks)
@@ -57,7 +57,15 @@ https://nano.to/Moon
 
 Visit [https://nano.to](https://nano.to/) to reserve your Username.
 
-# Customize
+# Simple Example
+
+Base url
+
+```sh
+https://nano.to/
+```
+
+Followed by your NANO Address or Username, with options to customize UI.
 
 ```sh
 https://nano.to/[NANO_ADDRESS_OR_USERNAME]?title=Donate&price=50
@@ -84,7 +92,7 @@ Demo: [https://nano.to/Moon](https://nano.to/Moon?title=Donate%20&price=50%20&im
 
 ## POST: Checkout Pages (More Secure)
 
-More advanced params can be passed in the body of a POST request.
+More advanced options can be used in the body of a POST request.
 
 ```
 https://nano.to/[NANO_ADDRESS_OR_USERNAME]
