@@ -75,6 +75,8 @@ https://nano.to/Moon?title=Donate
 &cancel_url=https://mywebsite.com/
 ```
 
+**Note:** Using CSS colors with hashtags ex. #000000 is only supported via POST request.
+
 Demo: [https://nano.to/Moon](https://nano.to/Moon?title=Donate%20&price=50%20&image=https://media3.giphy.com/media/cnuNz0fTBIUGnx4F9T/giphy.gif%20&description=%3Cp%3EHTML%20allowed%3C/p%3E%20&suggest=Basic:30,Premium:50%20&success_url=https://mywebsite.com/success?id={{id}}%20&cancel_url=https://mywebsite.com/)
 
 ## POST: Checkout Pages (More Secure)
@@ -100,7 +102,9 @@ axios.post('https://nano.to/[NANO_ADDRESS_OR_USERNAME]', {
         "name": "McDonalds",
         "logo": "https://www.tailorbrands.com/wp-content/uploads/2020/07/mcdonalds-logo.jpg"
     },
-    "image": "https://media3.giphy.com/media/cnuNz0fTBIUGnx4F9T/giphy.gif",
+    "image": "https://files.muzli.space/2d7af141fab097859ef66de8d7c50932.jpeg", // Nyan Cat
+    "color": "white,white",
+    "background": '#00000,#311ac5'
     "success_url": "https://mywebsite.com/success?id={{id}}&anotherParam=hello",
     "cancel_url": "https://google.com",
     "webhook_url": "https://mywebsite.com/secret-webhook",
