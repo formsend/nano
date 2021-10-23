@@ -367,8 +367,6 @@ Demo: https://api.nano.to/pending/moon
 
 ## GET: NANO Block By Hash
 
-Array of historical transactions of any NANO address. For now, API only goes back 50 transactions.  
-
 ```bash
 https://api.nano.to/hash/[NANO_HASH]
 ```
