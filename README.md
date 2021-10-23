@@ -199,12 +199,24 @@ Clicking (or Tapping) the QR Code while using Raw mode will open Natrium and aut
 
 Customize colors and even add an image.
 
+### GET Request
+
+```bash
+https://nano.to/Moon?color=red,white
+&background=blue,red
+&image=https://media3.giphy.com/media/cnuNz0fTBIUGnx4F9T/giphy.gif
+```
+
+**Note:** Using CSS colors with hashtags ex. #000000 is only supported via POST request.
+
+### POST Request
+
 ```javascript
 
 axios.post('https://nano.to/[NANO_ADDRESS_OR_USERNAME]', {
-	"color": "white,white",
-	"background": '#00000,#311ac5'
-	"success_url": "https://mywebsite.com/success?id={{id}}&anotherParam=hello",
+    "image": "https://files.muzli.space/2d7af141fab097859ef66de8d7c50932.jpeg", // Nyan Cat
+    "color": "white,white",
+    "background": '#00000,#311ac5'
 })
 
 ```
