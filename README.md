@@ -32,6 +32,7 @@ Launched **September 15th, 2021**. API is stable. More endpoints and complex ope
 	* [NANO Address Balance](#get-nano-address-balance)
 	* [NANO Address Pending Blocks](#get-nano-address-pending-blocks)
 	* [NANO Address History Blocks](#get-nano-address-history-blocks)
+	* [NANO Block By Hash](#get-nano-block-by-hash)
 	* [NANO Find Block By Address & Amount](#get-nano-transaction-by-amount)
 * [Author](#-author)
 * [Contributing](#-contributing)
@@ -361,6 +362,38 @@ Response
 No additional params.
 
 Demo: https://api.nano.to/pending/moon
+
+---
+
+## GET: NANO Block By Hash
+
+Array of historical transactions of any NANO address. For now, API only goes back 50 transactions.  
+
+```bash
+https://api.nano.to/hash/[NANO_HASH]
+```
+
+Response
+
+```javascript
+{
+	"type": "receive",
+	"signature": "AEE7BAD417803EC1F761EB7173CE6E8AB78AE0DBA5F3BF7286D058742C1BBE1DB4CD80D4139095D061C9FEC1277AA7EBFB3AC9F4EF582A2CEF338B29727BF80B",
+	"work": "694716ec03331b9e",
+	"representative": "nano_3kqdiqmqiojr1aqqj51aq8bzz5jtwnkmhb38qwf3ppngo8uhhzkdkn7up7rp",
+	"sender": "nano_3tu8f7jou49pt9u448ck81fc7r7gd6gsdutheewoxqhaibxcceiqegoefx4h",
+	"pending": "0",
+	"receiver": "nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o",
+	"confirmed": "true",
+	"timestamp": "2021-10-23T12:15:38.000Z"
+}
+```
+
+**Params**
+
+No additional params.
+
+Demo: https://api.nano.to/hash/A341FBD3942B411D98BAC16241E5BC149DBE0D54D9BB23A873BC2A2C2B92B113
 
 ---
 
