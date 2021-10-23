@@ -133,24 +133,6 @@ https://api.nano.to/checkout/666ee7bf26a?json=true
 ```
 ---
 
-### Themes
-
-![Cover](https://raw.githubusercontent.com/formsend/nano/master/.github/theme-1.png)
-
-Customize colors and even add an image.
-
-```javascript
-
-axios.post('https://nano.to/[NANO_ADDRESS_OR_USERNAME]', {
- 	"color": "white,white",
-    "background": '#00000,#311ac5'
-    "success_url": "https://mywebsite.com/success?id={{id}}&anotherParam=hello",
-})
-
-```
-
----
-
 ### Payments Notifications with Webhooks
 
 The recommended way to be notified of incoming payments is by passing a 'webhook_url' param in the body of a POST request. The JSON payload will look like this:
@@ -207,6 +189,24 @@ https://nano.to/moon?title=Trust&price=10&raw=false
 ```
 
 Clicking (or Tapping) the QR Code while using Raw mode will open Natrium and automatically fill in amount and address, on most phones. 
+
+---
+
+### Themes
+
+![Cover](https://raw.githubusercontent.com/formsend/nano/master/.github/theme-1.png)
+
+Customize colors and even add an image.
+
+```javascript
+
+axios.post('https://nano.to/[NANO_ADDRESS_OR_USERNAME]', {
+ 	"color": "white,white",
+    "background": '#00000,#311ac5'
+    "success_url": "https://mywebsite.com/success?id={{id}}&anotherParam=hello",
+})
+
+```
 
 ---
 
