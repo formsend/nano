@@ -149,6 +149,8 @@ axios.post('https://nano.to/[NANO_ADDRESS_OR_USERNAME]', {
 
 ```
 
+---
+
 ### Payments Notifications with Webhooks
 
 The recommended way to be notified of incoming payments is by passing a 'webhook_url' param in the body of a POST request. The JSON payload will look like this:
