@@ -18,11 +18,11 @@ Launched **September 15th, 2021**. API is stable. More endpoints and complex ope
 
 # Table of Contents
 * [Basic Usage](#basic-usage)
-* [Simple Example](#customize)
+	* [Simple Example](#customize)
 	* [Advanced Example](#post-checkout-pages-more-secure)
-	* [Payment Notifications](#payments-notifications-with-webhooks)
-	* [Themes](#themes)
-	* [Trust Wallet Support](#trust-wallet-support)
+* [Payment Notifications](#payments-notifications-with-webhooks)
+* [Trust Wallet Support](#trust-wallet-support)
+* [Themes](#themes)
 * [Nano.to API (Advanced Usage)](#advanced-usage-api)
 	* [Base URL](#base-url)
 	* [Authentication](#authentication)
@@ -201,9 +201,9 @@ Customize colors and even add an image.
 ```javascript
 
 axios.post('https://nano.to/[NANO_ADDRESS_OR_USERNAME]', {
- 	"color": "white,white",
-    "background": '#00000,#311ac5'
-    "success_url": "https://mywebsite.com/success?id={{id}}&anotherParam=hello",
+	"color": "white,white",
+	"background": '#00000,#311ac5'
+	"success_url": "https://mywebsite.com/success?id={{id}}&anotherParam=hello",
 })
 
 ```
