@@ -21,6 +21,7 @@ Launched **September 15th, 2021**. API is stable. More endpoints and complex ope
 * [Simple Example](#customize)
 	* [Advanced Example](#post-checkout-pages-more-secure)
 	* [Payment Notifications](#payments-notifications-with-webhooks)
+	* [Themes](#themes)
 	* [Trust Wallet Support](#trust-wallet-support)
 * [Nano.to API (Advanced Usage)](#advanced-usage-api)
 	* [Base URL](#base-url)
@@ -131,6 +132,22 @@ You can check the data of a Checkout within its lifespan by appending '?json=tru
 https://api.nano.to/checkout/666ee7bf26a?json=true
 ```
 ---
+
+### Themes
+
+![Cover](https://raw.githubusercontent.com/formsend/nano/master/.github/theme-1.png)
+
+Customize colors and even add an image.
+
+```javascript
+
+axios.post('https://nano.to/[NANO_ADDRESS_OR_USERNAME]', {
+ 	"color": "white,white",
+    "background": '#00000,#311ac5'
+    "success_url": "https://mywebsite.com/success?id={{id}}&anotherParam=hello",
+})
+
+```
 
 ### Payments Notifications with Webhooks
 
