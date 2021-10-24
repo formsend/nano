@@ -107,9 +107,9 @@ axios.post('https://nano.to/[NANO_ADDRESS_OR_USERNAME]', {
         "name": "McDonalds",
         "logo": "https://www.tailorbrands.com/wp-content/uploads/2020/07/mcdonalds-logo.jpg"
     },
-    "image": "https://files.muzli.space/2d7af141fab097859ef66de8d7c50932.jpeg", // Nyan Cat
-    "color": "white,white",
-    "background": '#00000,#311ac5'
+    "image": "https://files.muzli.space/2d7af141fab097859ef66de8d7c50932.jpeg", 
+    "color": "black,white",
+    "background": "#00000,#311ac5",
     "success_url": "https://mywebsite.com/success?id={{id}}&anotherParam=hello",
     "cancel_url": "https://google.com",
     "webhook_url": "https://mywebsite.com/secret-webhook",
