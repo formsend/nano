@@ -21,7 +21,6 @@ Launched **September 15th, 2021**. API is stable. More endpoints and complex ope
 * [Simple Example](#simple-usage)
 * [Advanced Example](#advanced-usage)
 * [Payment Notifications](#payments-notifications-with-webhooks)
-* [Trust Wallet Support](#trust-wallet-support)
 * [Themes & Colors](#themes--colors)
 * [Nano.to API (Advanced Usage)](#advanced-usage-api)
 	* [Base URL](#base-url)
