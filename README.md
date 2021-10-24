@@ -303,7 +303,7 @@ Response
 
 ## GET: NANO Address Balance
 
-Basic Blockchain information of any NANO address. Including balance.
+Balance information of any NANO address.
 
 ```bash
 https://api.nano.to/account/[NANO_ADDRESS]
@@ -336,7 +336,7 @@ Demo: https://api.nano.to/account/moon
 
 ## GET: NANO Address Pending Blocks
 
-Array of pending blocks i.e transactions for a NANO address.
+Array of pending blocks (payments) for a NANO address.
 
 ```bash
 https://api.nano.to/pending/[NANO_ADDRESS]
@@ -397,7 +397,7 @@ Demo: https://api.nano.to/hash/A341FBD3942B411D98BAC16241E5BC149DBE0D54D9BB23A87
 
 ## GET: NANO Address History Blocks
 
-Array of historical transactions of any NANO address. For now, API only goes back 50 transactions.  
+Array of historical blocks (payments) of any NANO address. For now, API only goes back 50 blocks.  
 
 ```bash
 https://api.nano.to/history/[NANO_ADDRESS]
