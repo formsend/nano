@@ -36,10 +36,10 @@ function validate(name, value, type, output) {
 
 	var rawAmount = '19424000000000000000000000000'
 	var convertFromRaw =  Nano.fromRaw(rawAmount)
-	validate( "Nano.fromRaw()", convertFromRaw, 'string')
+	validate( "Nano.fromRaw()", convertFromRaw == '0.019424', 'boolean')
 
 	var convertToRaw =  Nano.toRaw(convertFromRaw)
-	validate( "Nano.toRaw()", convertToRaw, 'string')
+	validate( "Nano.toRaw()", convertToRaw == rawAmount, 'boolean')
 
 	var findBlockByAmount =  Nano.findBlockByAmount(address2, history[0].amount)
 	validate( "Nano.findBlockByAmount()", findBlockByAmount, 'object')
