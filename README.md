@@ -70,7 +70,7 @@ Available Options:
 https://nano.to/Moon?title=Donate
 &price=50
 &donate=true
-&color=red,white
+&color=white
 &background=blue,red
 &image=https://media3.giphy.com/media/cnuNz0fTBIUGnx4F9T/giphy.gif
 &description=<p>HTML allowed 😎</p>
