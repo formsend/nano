@@ -28,6 +28,6 @@
     "eslint-plugin-import": "^2.25.2"
   },
   "scripts": {
-    "test": "node code/tests.js"
+    "test": "node test/index.js"
   }
 }
