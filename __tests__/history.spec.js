@@ -1,7 +1,5 @@
 const Nano = require('../code/index');
 
-jest.setTimeout(15000);
-
 const nanoToAddress = "nano_1bc8gx518sp55o6nmxw8n9hh9uco8mig9suy79s4mo59dsr7uz84gbfkb7w1";
 
 test('ensure Nano.to address hash valid', async () => {
