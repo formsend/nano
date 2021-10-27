@@ -207,15 +207,17 @@ axios.post('https://nano.to/[NANO_ADDRESS_OR_USERNAME]', {
 
 ```
 
----
-
 # Developer API
+
+![Cover](https://raw.githubusercontent.com/formsend/nano/master/.github/developer.png)
+
+**The Nano.to API is the easiest way to interact the NANO blockchain.** Accessed via GET or POST requests. You can use the browser to navigate the Blockchain, for most GET endpoints. POST requests require something like [Postman](https://www.postman.com/) or a backend server. 
+
+### Base URL
 
 ```
 https://api.nano.to
 ```
-
-The API is accessed by GET or POST request via HTTPS. You can use the browser for most GET endpoints. POST requests require something like [Postman](https://www.postman.com/) or a backend server. 
 
 ---
 
