@@ -16,4 +16,10 @@ describe('user account', () => {
 
         expect(account).toBeInstanceOf(Error);
     });
+
+    it('request name of Nano.to account', async () => {
+        const account = await Nano.name("moon");
+
+        expect(account.address).toBe("nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o")
+    })
 });
