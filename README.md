@@ -217,9 +217,9 @@ Accessed via GET or POST requests. You can use the browser to navigate the Block
 
 ### Base URL
 
-```
-https://api.nano.to
-```
+
+**Base URL:** [https://api.nano.to](https://api.nano.to)
+
 
 ---
 
