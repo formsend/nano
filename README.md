@@ -187,9 +187,7 @@ Clicking (or Tapping) the QR Code will open Natrium and automatically fill in am
 
 When creating links in Markdown (or HTML), you can use underscores (\_) instead of spaces, and they will read as spaces.
 
-```
-https://nano.to/Moon?title=I_Love_You
-```
+[https://nano.to/Moon?title=I_Love_You](https://nano.to/Moon?title=I_Love_You)
 
 ---
 
