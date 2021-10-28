@@ -179,7 +179,17 @@ The recommended way to be notified of incoming payments is by passing a 'webhook
 
 ### Accessibility
 
+**Wallet Deep Links**
+
 Clicking (or Tapping) the QR Code will open Natrium and automatically fill in amount and address, on most phones. 
+
+**Github Markdown Support**
+
+When creating links in Markdown (or HTML), you can use underscores (\_) instead of spaces, and they will read as spaces.
+
+```
+https://nano.to/Moon?title=I_Love_You
+```
 
 ---
 
