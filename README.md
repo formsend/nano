@@ -1,20 +1,20 @@
 ![Cover](https://raw.githubusercontent.com/formsend/nano/master/.github/banner.png)
 
-# **Nano.to, Free NANO Blockchain Payment API** 
+# **Free NANO Blockchain Payment API (Nano.to)** 
 
 Use this API to create payment pages (like Stripe Checkout) for NANO crypto currency. Accessible from any internet connected device with a modern web browser. 
 
 Anonymous, no account or API key required to use.
 
-Launched **September 15th, 2021**. API is stable. More endpoints and complex operations are planned in the future. Enterprise planned for late 2022.
+Launched **September 15th, 2021**. API is stable. More endpoints and complex operations are planned in the future. **Enterprise planned for late 2022.**
 
 [NANO](https://nano.org) is a fee-less, decentralized crypto currency. 
 
 **Note:** **We did not build or own NANO. We simply built a service on top of it.**
 
-**We can't wait to see what you build.**
-
 ### Live Demo: [nano.to/moon](https://nano.to/Moon?title=Donate%20&price=50%20&donate=true%20&color=white,white%20&background=blue,purple%20&image=https://media3.giphy.com/media/cnuNz0fTBIUGnx4F9T/giphy.gif%20&description=%3Cp%3EHTML%20allowed%20%F0%9F%98%8E%3C/p%3E%20&suggest=Basic:30,Premium:50&cancel_url=https://github.com/formsend/nano)
+
+---
 
 # Table of Contents
 * [Get Started](#basic-usage)
@@ -37,6 +37,8 @@ Launched **September 15th, 2021**. API is stable. More endpoints and complex ope
 * [Contributing](#-contributing)
 * [Donate](#%EF%B8%8F-donate)
 * [Stargazers](#stargazers)
+
+---
 
 # Basic Usage
 
@@ -83,9 +85,11 @@ https://nano.to/Moon?title=Donate
 
 Demo: [https://nano.to/Moon](https://nano.to/Moon?title=Donate%20&price=50%20&donate=true%20&color=white,white%20&background=blue,red%20&image=https://media3.giphy.com/media/cnuNz0fTBIUGnx4F9T/giphy.gif%20&description=%3Cp%3EHTML%20allowed%20%F0%9F%98%8E%3C/p%3E%20&suggest=Basic:30,Premium:50%20&success_url=https://mywebsite.com/success?id={{id}}%20&cancel_url=https://mywebsite.com/)
 
+---
+
 ## Advanced Usage
 
-More advanced options can be used in the body of a POST request.
+More advanced options can be passed in the body of a POST request.
 
 ```
 https://nano.to/[NANO_ADDRESS_OR_USERNAME]
@@ -211,9 +215,9 @@ axios.post('https://nano.to/[NANO_ADDRESS_OR_USERNAME]', {
 
 ![Cover](https://raw.githubusercontent.com/formsend/nano/master/.github/developer.png)
 
-### The Nano.to API is the easiest way to interact the NANO blockchain. A CyberPunk UI/UX is an added bonus.
+### The Nano.to API is the easiest way to interact with the NANO blockchain. A CyberPunk UI/UX is an added bonus.
 
-Accessed via GET or POST requests. You can use the browser to navigate the Blockchain, for most GET endpoints. POST requests require something like [Postman](https://www.postman.com/) or a backend server. 
+Accessed via GET or POST requests. You can use the browser to 'browse' the Blockchain. POST requests require something like [Postman](https://www.postman.com/) or a backend server. 
 
 ### Base URL
 
@@ -229,7 +233,7 @@ Nano.to API is free, and open to the world. The API is built to operate 24/7, 36
 
 To use the API you do **not** need an API key. 
 
-Your IP Address is your API key. Don't abuse it.
+Your IP Address is your API key. **Don't abuse it.**
 
 ---
 
@@ -245,7 +249,7 @@ Email [Formsend](mailto:hello@forward.miami?subject=Nano.to&nbsp;Api&nbsp;Use), 
 
 ## GET: Live NANO Price
 
-Get current NANO price in USD. The price refreshes every 5 minutes. CoinMarketCap is used for price data.
+Get current NANO price in USD. The price refreshes every 60 seconds. CoinMarketCap is used for price data.
 
 ```bash
 https://api.nano.to/price
