@@ -86,18 +86,30 @@ https://nano.to/Moon?title=Donate
 
 Demo: [https://nano.to/Moon](https://nano.to/Moon?title=Donate%20&price=50%20&donate=true%20&color=white,white%20&background=blue,red%20&image=https://media3.giphy.com/media/cnuNz0fTBIUGnx4F9T/giphy.gif%20&description=%3Cp%3EHTML%20allowed%20%F0%9F%98%8E%3C/p%3E%20&suggest=Basic:30,Premium:50%20&success_url=https://mywebsite.com/success?id={{id}}%20&cancel_url=https://mywebsite.com/)
 
+### HTML Example
+
+```html
+<a href="https://nano.to/ADDRESS_OR_USERNAME">Tip with NANO</a>
+```
+### Markdown Example
+
+```
+[Tip with NANO](https://nano.to/ADDRESS_OR_USERNAME)
+```
+
 ---
 
 ## Advanced Usage
 
-More advanced options can be passed in the body of a POST request.
+More advanced and private data can be passed in the body of a POST request.
 
 ```
-https://nano.to/[NANO_ADDRESS_OR_USERNAME]
+POST: https://nano.to/[NANO_ADDRESS_OR_USERNAME]
 ```
 
 ```javascript
 // npm install axios
+const axios = require('axios')
 
 axios.post('https://nano.to/[NANO_ADDRESS_OR_USERNAME]', {
     "title": "New Order",
@@ -132,7 +144,7 @@ Example response:
 }
 ```
 
-You can check the data of a Checkout within its lifespan by appending '?json=true' to the 'url' as a GET request. 
+You can check the data of a Checkout **within its 12 hour lifespan** by appending '?json=true' to the 'url' as a GET request. 
 
 ```
 https://api.nano.to/checkout/666ee7bf26a?json=true
