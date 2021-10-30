@@ -78,13 +78,13 @@ https://nano.to/Moon?title=Donate
 &image=https://media3.giphy.com/media/cnuNz0fTBIUGnx4F9T/giphy.gif
 &description=<p>HTML allowed 😎</p>
 &suggest=Basic:30,Premium:50
-&success_url=https://mywebsite.com/success?id={{id}}
+&success_url=https://mywebsite.com/success
 &cancel_url=https://mywebsite.com/
 ```
 
-**Note (GET):** Using CSS colors with hashtags ex. #000000 is supported, but replace the **#** with a **$** symbol.
-
 Demo: [https://nano.to/Moon](https://nano.to/Moon?title=Donate%20&price=50%20&donate=true%20&color=white,white%20&background=blue,red%20&image=https://media3.giphy.com/media/cnuNz0fTBIUGnx4F9T/giphy.gif%20&description=%3Cp%3EHTML%20allowed%20%F0%9F%98%8E%3C/p%3E%20&suggest=Basic:30,Premium:50%20&success_url=https://mywebsite.com/success?id={{id}}%20&cancel_url=https://mywebsite.com/)
+
+**Note:** When using **GET**, CSS colors with hashtags ex. #000000 are supported, but replace the **#** with a **$** symbol. This is a URL limitation. This is not an issue with POST requests. See below. 
 
 ### HTML Example
 
@@ -218,7 +218,7 @@ https://nano.to/Moon?color=red,white
 &image=https://media3.giphy.com/media/cnuNz0fTBIUGnx4F9T/giphy.gif
 ```
 
-**Note:** Using CSS colors with hashtags ex. #000000 is supported, but replace the **#** with a **$** symbol.
+**Note:** When using **GET**,CSS colors with hashtags ex. #000000 are supported, but replace the **#** with a **$** symbol. This is a URL limitation. This is not an issue with POST requests. See below. 
 
 **POST Request**
 
@@ -285,8 +285,6 @@ Response
     "timestamp": "2021-09-23T01:57:52.020Z"
 }
 ```
-
-You can pass URL query parameters to change your request. 
 
 **Bonus:** You can get other crypto prices.
 
