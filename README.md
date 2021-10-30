@@ -23,7 +23,7 @@ Launched **September 15th, 2021**. API is stable. More endpoints and complex ope
 * [Payment Notifications](#payments-notifications-with-webhooks)
 * [Themes & Colors](#themes--colors)
 * [Accessibility](#accessibility)
-* [Developer API](#advanced-usage-api)
+* [Developer API](#developer-api)
 	* [Base URL](#base-url)
 	* [Authentication](#authentication)
 	* [Rate Limiting](#rate-limiting)
