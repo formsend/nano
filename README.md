@@ -2,7 +2,7 @@
 
 # **Free NANO Blockchain Payment API ([Nano.to](https://api.nano.to))** 
 
-Use this API to create payment pages (like Stripe Checkout) for NANO crypto currency. Accessible from any internet connected device with a modern web browser. 
+Use this API to create hosted payment links (like Stripe Checkout) for your NANO address. Accessible from any internet connected device with a modern web browser. 
 
 Anonymous, no account or API key required to use.
 
@@ -254,7 +254,7 @@ Nano.to API is free, and open to the world. The API is built to operate 24/7, 36
 
 To use the API you do **not** need an API key. 
 
-Your IP Address is your API key. **Don't abuse it.**
+Your IP Address & NANO Address are your API keys. **Don't abuse them.**
 
 ---
 
