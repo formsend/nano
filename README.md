@@ -186,7 +186,7 @@ The recommended way to be notified of incoming payments is by passing a 'webhook
 }
 ```
 
-**Note:** While in Beta, API data structure may change without notice. Checkouts data is stored in-memory and expires after 12 hours.
+**Note:** Checkout metadata is stored in-memory and expires (is actually deleted, not marked deleted) after 12 hours.
 
 ---
 
