@@ -11,7 +11,9 @@
   "bundleDependencies": false,
   "dependencies": {
     "axios": "^0.22.0",
-    "big.js": "^6.1.1"
+    "big.js": "^6.1.1",
+    "nanocurrency": "^2.5.0",
+    "qrcode": "^1.4.4"
   },
   "deprecated": false,
   "description": "A super simple NANO crypto currency blockchain API.",

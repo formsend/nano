@@ -1,5 +1,7 @@
 const Axios = require('axios');
 const Convert = require('./utilities/convert');
+const Currency = require('nanocurrency')
+const QRCode = require('qrcode')
 
 const Nano = {
 
@@ -12,9 +14,10 @@ const Nano = {
   fromRaw: Convert.fromRaw,
 
   /**
-     * Live Price (CoinMarketCap)
-     * */
+  * Live Price (CoinMarketCap)
+  **/
   async price(currency, config) {
+
     let data;
 
     currency = currency || 'USD';
@@ -24,7 +27,6 @@ const Nano = {
     if (typeof config === 'object' && (config.apiKey || config.key)) {
       const headers = { headers: { 'X-CMC_PRO_API_KEY': config.apiKey || config.key } };
       let price = await server.http.get(`https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?symbol=${symbol}${currency !== 'USD' ? `&convert=${currency}` : ''}`, headers);
-
       data = {
         symbol: symbol.toUpperCase(),
         currency: currency.toUpperCase(),
@@ -37,6 +39,7 @@ const Nano = {
     }
 
     return config && config.timestamp ? data : data.price;
+
   },
 
   /**
@@ -48,6 +51,7 @@ const Nano = {
     return account.data;
   },
 
+  // alias
   address: this.account,
 
   /**
@@ -55,22 +59,13 @@ const Nano = {
      * */
   pending: async (address) => {
     if (!address) return new Error('First parameter, NANO Address is missing.');
-
-    const pending = await Axios.get(
-      `${Nano.url}/pending/${address}`, { maxContentLength: 52428890 }
-    );
-
+    const pending = await Axios.get(`${Nano.url}/pending/${address}`, { maxContentLength: 52428890 });
     return pending.data;
   },
 
   /**
-     * Check for a specific payment
-     * */
-  payment: async (address, amount) => await this.findBlockByAmount(address, amount),
-
-  /**
-     * Get payment history
-     * */
+  * Get payment history
+  * */
   history: async (address) => {
     if (!address) return new Error('First parameter, NANO Address is missing.');
     const history = await Axios.get(`${Nano.url}/history/${address}`, { maxContentLength: 52428890 });
@@ -78,19 +73,20 @@ const Nano = {
   },
 
   /**
-     * Checkout POST API
-     * */
-  checkout: async (body) => {
-    if (!body) return new Error('First parameter, Checkout body is missing.');
-    const checkout = await Axios.post('https://nano.to', body);
-    return checkout.data;
+  * Checkout POST API
+  * */
+  checkout: {
+    get: async (id) => {
+      if (!id) return new Error('First parameter, Checkout id is missing.');
+      const checkout = await Axios.get(`https://api.nano.to/checkout/${id}?json=true`);
+      return checkout.data;
+    },
+    create: async (data) => {
+      if (!data) return new Error('First parameter, Checkout body is missing.');
+      const checkout = await Axios.post('https://nano.to', data);
+      return checkout.data;
+    },
   },
-
-  // aliases
-  // order: this.checkout,
-  // invoice: this.checkout,
-  // purchase: this.checkout,
-  // donation: this.checkout,
 
   /**
     * Short Names :)
@@ -101,47 +97,73 @@ const Nano = {
     return name.data;
   },
 
+  // alias
+  username: this.name,
+
   /**
-     * QrCode API
-     * TODO
-     * */
-  // qrCode: async (address, icon, amount) => {
-  //     // psuedo code
-  //     if (!address) return new Error("First parameter, Nano.to address is missing.")
-  //     var qrCode = await Axios.get(`https://api.nano.to/qrcode/${address}`)
-  //     return qrCode.data
+  * QrCode API
+  * TODO
+  * */
+  qrCode: async (address, amount, color, background, prepend) => {
+    return new Promise((resolve) => {
+      QRCode.toDataURL(`${prepend ? prepend : 'nano:'}${address}?amount=${amount}`, { color: { dark: color || "#000", light: background || '#FFF' } }, function (err, dataURL) {
+        resolve(dataURL);
+      });
+    });
+  },
+
+  /**
+  * Wallet API
+  * TODO
+  * */
+  // wallet: async (config) => ({
+  //   send(to, amount) {},
+  //   receive() {},
+  //   create(name, seed) {},
+  //   backup() {},
+  // }),
+
+  /**
+  * Representative API
+  * TODO
+  * */
+  // representative: {
+  //   list(address) {},
+  //   create() {}, // ;)
   // },
 
   /**
-     * Wallet API
-     * TODO
-     * */
-  wallet: async (config) => ({
-    send(to, amount) {},
-    receive() {},
-    create(name, seed) {},
-    backup() {},
-  }),
+  * Blockchain Helpers
+  * */
+  blockchain: {
+  
+    findBlockByAmount: async (address, amount) => {
+      if (!address) return new Error('First parameter, NANO Address is missing.');
+      const payment = await Axios.get(`${Nano.url}/payment/${address}/${amount}`);
+      return payment.data;
+    }
 
-  /**
-     * Representative API
-     * TODO
-     * */
-  representative: {
-    list(address) {},
-    create() {}, // ;)
-  },
+  }
 
-  /**
-     * Blockchain Helpers
-     * */
+}
 
-  findBlockByAmount: async (address, amount) => {
-    if (!address) return new Error('First parameter, NANO Address is missing.');
-    const payment = await Axios.get(`${Nano.url}/payment/${address}/${amount}`);
-    return payment.data;
-  },
+// import currency package
+// Nano.blockchain = {}
+Object.keys(Currency).map(a => a == 'Unit' ? Nano.blockchain['units'] = Currency[a] : Nano.blockchain[a] = Currency[a] );
 
-};
+// aliases
+Nano.address = Nano.account
+Nano.username = Nano.name
+Nano.payment = Nano.blockchain.findBlockByAmount
+
+Nano.qr = Nano.qrCode
+Nano.qrcode = Nano.qrCode
+Nano.QrCode = Nano.qrCode
+
+Nano.order = Nano.checkout
+Nano.invoice = Nano.checkout
+Nano.purchase = Nano.checkout
+
+console.log(Nano)
 
 module.exports = Nano;
