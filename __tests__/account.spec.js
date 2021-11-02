@@ -6,7 +6,7 @@ describe('user account', () => {
     it('from nano.to returns balance', async () => {
         const account = await Nano.account(nanoToAddress);
 
-        expect(account.balance).toBe("0.001");
+        expect(account.balance).toBe("0.001000");
     });
 
     it('missing $NANO address returns error', async () => {
