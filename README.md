@@ -82,8 +82,6 @@ https://nano.to/Moon?title=Donate
 &cancel_url=https://mywebsite.com/
 ```
 
-Demo: [https://nano.to/Moon](https://nano.to/Moon?title=Donate%20&price=50%20&donate=true%20&color=white,white%20&background=blue,red%20&image=https://media3.giphy.com/media/cnuNz0fTBIUGnx4F9T/giphy.gif%20&description=%3Cp%3EHTML%20allowed%20%F0%9F%98%8E%3C/p%3E%20&suggest=Basic:30,Premium:50%20&success_url=https://mywebsite.com/success?id={{id}}%20&cancel_url=https://mywebsite.com/)
-
 **Note:** When using **GET**, CSS colors with hashtags ex. #000000 are supported, but replace the **#** with a **$** symbol. This is a URL limitation. This is not an issue with POST requests. See below. 
 
 ### HTML Example
