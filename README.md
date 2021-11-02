@@ -18,7 +18,7 @@ Launched **September 15th, 2021**. API is stable. More endpoints and complex ope
 
 # Table of Contents
 * [Get Started](#basic-usage)
-* [Simple Example](#simple-usage)
+* [Simple Example](#customize)
 * [Advanced Example](#advanced-usage)
 * [Payment Notifications](#payments-notifications-with-webhooks)
 * [Themes & Colors](#themes--colors)
@@ -61,7 +61,7 @@ https://nano.to/Moon
 
 Visit [https://nano.to](https://nano.to/) to reserve your Username.
 
-# Simple Usage
+# Customize
 
 ```sh
 https://nano.to/[NANO_ADDRESS_OR_USERNAME]?title=Donate&price=50
