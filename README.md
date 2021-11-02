@@ -59,7 +59,7 @@ Example with a Username:
 https://nano.to/Moon
 ```
 
-Visit [https://nano.to](https://nano.to/) to reserve your Username.
+Search for and reserve Usernames at [https://api.nano.to](https://api.nano.to/).
 
 # Customize
 
