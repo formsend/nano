@@ -1,6 +1,6 @@
 ![Cover](https://raw.githubusercontent.com/formsend/nano/master/.github/banner.png)
 
-# **Free NANO Blockchain Payment API ([Nano.to](https://api.nano.to))** 
+# **Free NANO Blockchain Payment API ([Nano.to](https://nano.to))** 
 
 Use this API to create hosted payment links (like Stripe Checkout) for your NANO address. Accessible from any internet connected device with a modern web browser. 
 
@@ -139,7 +139,7 @@ Example response:
 ```
 {
     "id": "666ee7bf26a",
-    "url": "https://api.nano.to/checkout/666ee7bf26a",
+    "url": "https://nano.to/checkout/666ee7bf26a",
     "exp": "2021-09-23T01:51:23.853Z"
 }
 ```
@@ -147,7 +147,7 @@ Example response:
 You can check the data of a Checkout **within its 12 hour lifespan** by appending '?json=true' to the 'url' as a GET request. 
 
 ```
-https://api.nano.to/checkout/666ee7bf26a?json=true
+https://nano.to/checkout/666ee7bf26a?json=true
 ```
 ---
 
@@ -242,8 +242,7 @@ Accessed via GET or POST requests. You can use the browser to 'browse' the Block
 
 ### Base URL
 
-
-[https://api.nano.to](https://api.nano.to)
+[https://nano.to](https://nano.to)
 
 
 ---
@@ -273,7 +272,7 @@ Email [Formsend](mailto:hello@forward.miami?subject=Nano.to&nbsp;Api&nbsp;Use), 
 Get current NANO price in USD. The price refreshes every 60 seconds. CoinMarketCap is used for price data.
 
 ```bash
-https://api.nano.to/price
+https://nano.to/price
 ```
 
 Response
@@ -295,11 +294,11 @@ Response
 |   symbol | string |  Crypto symbol. **Default** NANO |
 |   currency | string |  [ISO-4217](https://docs.1010data.com/1010dataReferenceManual/DataTypesAndFormats/currencyUnitCodes.html) symbol. **Default** USD |
 
-Example: https://api.nano.to/price
+Example: https://nano.to/price
 
-Example 2: https://api.nano.to/price?symbol=ETH&currency=CYN
+Example 2: https://nano.to/price?symbol=ETH&currency=CYN
 
-Example 3: https://api.nano.to/price?symbol=SHIB&currency=CAD
+Example 3: https://nano.to/price?symbol=SHIB&currency=CAD
 
 ---
 
@@ -308,7 +307,7 @@ Example 3: https://api.nano.to/price?symbol=SHIB&currency=CAD
 Usernames are aliases for NANO addresses. You can rent one [here](https://nano.to). 
 
 ```bash
-https://api.nano.to/name/moon
+https://nano.to/name/moon
 ```
 
 Response
@@ -332,7 +331,7 @@ Response
 Balance information of any NANO address.
 
 ```bash
-https://api.nano.to/account/[NANO_ADDRESS]
+https://nano.to/account/[NANO_ADDRESS]
 ```
 
 Response
@@ -356,7 +355,7 @@ Response
 
 No additional params.
 
-Demo: https://api.nano.to/account/moon
+Demo: https://nano.to/account/moon
 
 ---
 
@@ -365,7 +364,7 @@ Demo: https://api.nano.to/account/moon
 Array of pending blocks (payments) for a NANO address.
 
 ```bash
-https://api.nano.to/pending/[NANO_ADDRESS]
+https://nano.to/pending/[NANO_ADDRESS]
 ```
 
 Response
@@ -387,14 +386,14 @@ Response
 
 No additional params.
 
-Demo: https://api.nano.to/pending/moon
+Demo: https://nano.to/pending/moon
 
 ---
 
 ## GET: NANO Block By Hash
 
 ```bash
-https://api.nano.to/hash/[NANO_HASH]
+https://nano.to/hash/[NANO_HASH]
 ```
 
 Response
@@ -417,7 +416,7 @@ Response
 
 No additional params.
 
-Demo: https://api.nano.to/hash/A341FBD3942B411D98BAC16241E5BC149DBE0D54D9BB23A873BC2A2C2B92B113
+Demo: https://nano.to/hash/A341FBD3942B411D98BAC16241E5BC149DBE0D54D9BB23A873BC2A2C2B92B113
 
 ---
 
@@ -426,7 +425,7 @@ Demo: https://api.nano.to/hash/A341FBD3942B411D98BAC16241E5BC149DBE0D54D9BB23A87
 Array of historical blocks (payments) of any NANO address. For now, API only goes back 50 blocks.  
 
 ```bash
-https://api.nano.to/history/[NANO_ADDRESS]
+https://nano.to/history/[NANO_ADDRESS]
 ```
 
 Response
@@ -457,7 +456,7 @@ Response
 
 No additional params.
 
-Demo: https://api.nano.to/history/moon
+Demo: https://nano.to/history/moon
 
 ---
 
@@ -466,11 +465,11 @@ Demo: https://api.nano.to/history/moon
 Check if a NANO address has received a payment with a specific amount. **Searches Pending & History.** This is useful if you want to build your own payment checker.
 
 ```bash
-https://api.nano.to/payment/[NANO_ADDRESS]/[AMOUNT]
+https://nano.to/payment/[NANO_ADDRESS]/[AMOUNT]
 ```
 
 ```bash
-https://api.nano.to/payment/nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o/0.02143
+https://nano.to/payment/nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o/0.02143
 ```
 
 **Amount must be in decimal (MEGA) not RAW.**

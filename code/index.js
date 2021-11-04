@@ -5,7 +5,7 @@ const QRCode = require('qrcode')
 
 const Nano = {
 
-  url: 'https://api.nano.to',
+  url: 'https://nano.to',
 
   /**
      * Big Number Conversion API
@@ -34,7 +34,7 @@ const Nano = {
         timestamp: price.data.status.timestamp,
       };
     } else {
-      let price = await Axios.get(`https://api.nano.to/price?symbol=${symbol}&currency=${currency}`);
+      let price = await Axios.get(`https://nano.to/price?symbol=${symbol}&currency=${currency}`);
       data = price.data;
     }
 
@@ -78,7 +78,7 @@ const Nano = {
   checkout: {
     get: async (id) => {
       if (!id) return new Error('First parameter, Checkout id is missing.');
-      const checkout = await Axios.get(`https://api.nano.to/checkout/${id}?json=true`);
+      const checkout = await Axios.get(`https://nano.to/checkout/${id}?json=true`);
       return checkout.data;
     },
     create: async (data) => {

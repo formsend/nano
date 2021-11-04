@@ -12,7 +12,7 @@ function makeid(length) {
 }
 
 axios.get("https://nano.to/nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o").then(res => {
-  if (res.request.res.responseUrl.includes("https://api.nano.to/checkout/")) {
+  if (res.request.res.responseUrl.includes("https://nano.to/checkout/")) {
     console.log(`Create Invoice (Get):`, '\x1b[32m', "Ok", '\x1b[0m')
   } else {
     console.log(`Create Invoice (Get):`, '\x1b[41m', "Error", '\x1b[0m')

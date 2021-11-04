@@ -1,6 +1,6 @@
 const axios = require("axios");
 
-axios.get("https://api.nano.to/name/moon").then(res => {
+axios.get("https://nano.to/name/moon").then(res => {
     if (res.data.address === "nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o") {
         console.log(`Get Name:`, '\x1b[32m', "Ok", '\x1b[0m')
     } else {

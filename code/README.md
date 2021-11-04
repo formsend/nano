@@ -6,7 +6,7 @@ Work in progress.
 
 ```
 {
-  url: 'https://api.nano.to',
+  url: 'https://nano.to',
   toRaw: [Function: toRaw],
   fromRaw: [Function: fromRaw],
   price: [AsyncFunction: price],
