@@ -21,7 +21,7 @@
 
 ### Markdown Examples
 
-[https://nano.to/Moon](https://nano.to/qrcode/Moon)
+![https://nano.to/Moon](https://nano.to/qrcode/Moon)
 
 ```
 [https://nano.to/Moon](https://nano.to/qrcode/Moon)
