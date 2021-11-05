@@ -1,11 +1,8 @@
 const axios = require("axios");
 
+const key = "Get Balance";
+
 axios.get(`https://nano.to`).then(res => {
-    if (res.data === "") {
-        console.log(`Name:`, '\x1b[32m', "Ok", '\x1b[0m')
-    } else {
-        console.log(`Name:`, '\x1b[41m', "Error", '\x1b[0m')
-    }
-}).catch(error => {
-    console.log(`Name:`, '\x1b[41m', "Error", '\x1b[0m')
-});
+    if (typeof res.data == "string") good(key)
+    else { bad(key) }
+}).catch(error => bad(key));
