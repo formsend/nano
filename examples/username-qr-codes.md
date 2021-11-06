@@ -1,6 +1,9 @@
 # QR Code API
 
 
+**Note: This API endpoint is for Nano.to Usernames only. You must lease a [NANO Username](https://nano.to) before using these ednpoints.**
+
+
 **Basic Usage**
 
 Use this URL anywhere an HTML Image src goes. 
