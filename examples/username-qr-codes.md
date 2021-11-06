@@ -7,18 +7,18 @@
 
 ```html
 <a href="https://nano.to/Moon">
-  <img style="max-width: 100px" src="https://nano.to/qrcode/Moon"/>
+  <img style="max-width: 100px" src="https://nano.to/Moon/qrcode"/>
 </a>
 ```
 
-<img style="max-width: 100px" src="https://nano.to/qrcode/Moon"/>
+<img style="max-width: 100px" src="https://nano.to/Moon/qrcode?width=300"/>
 
 
 **Autofill Amount**
 
 
 ```html
-<img style="max-width: 100px" src="https://nano.to/qrcode/Moon/0.3925"/>
+<img style="max-width: 100px" src="https://nano.to/Moon/qrcode?amount=0.3925&width=300"/>
 ```
 
 
@@ -26,10 +26,10 @@
 
 
 ```markdown
-[https://nano.to/Moon](https://nano.to/qrcode/Moon)
+[https://nano.to/Moon](https://nano.to/Moon/qrcode)
 ```
 
-![https://nano.to/Moon](https://nano.to/qrcode/Moon)
+![https://nano.to/Moon](https://nano.to/Moon/qrcode?width=300)
 
 
 
