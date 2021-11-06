@@ -26,7 +26,7 @@
 
 
 ```markdown
-[NANO Tip](https://nano.to/Moon/qrcode)
+![NANO Tip](https://nano.to/Moon/qrcode)
 ```
 
 ![Tip NANO](https://nano.to/Moon/qrcode?width=300)
