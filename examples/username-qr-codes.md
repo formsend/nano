@@ -12,19 +12,18 @@ https://nano.to/Moon/QrCode
 Pass more options with URL params.
 
 ```
-https://nano.to/Moon/QrCode?image=200&amout=50&icon=3
+https://nano.to/Moon/QrCode?image=200&amout=50
 ```
 
 **HTML Link & Image Example**
 
 ```html
 <a href="https://nano.to/Moon">
-  <img style="max-width: 100px" src="https://nano.to/Moon/QrCode?image=250&amout=50&icon=3"/>
+  <img style="max-width: 100px" src="https://nano.to/Moon/QrCode?image=100&amout=50"/>
 </a>
 ```
 
-<img style="max-width: 100px" src="https://nano.to/Moon/QrCode?image=250&amout=50&icon=3"/>
-
+<img style="max-width: 100px" src="https://nano.to/Moon/QrCode?image=100&amout=50"/>
 
 **Natrium Deep Link & Image Example**
 
@@ -49,7 +48,19 @@ https://nano.to/Moon/QrCode?image=200&amout=50&icon=3
 ![NANO Tip](https://nano.to/Moon/qrcode)
 ```
 
-![Tip NANO](https://nano.to/Moon/qrcode?width=300)
+![Tip NANO](https://nano.to/Moon/QrCode?image=250&amout=50&icon=2)
 
+
+### Customize Icons
+
+```
+https://nano.to/Moon/QrCode?image=250&amout=50&icon=3
+```
+
+```
+<img style="max-width: 100px" src="https://nano.to/Moon/QrCode?image=250&amout=50&icon=3"/>
+```
+
+<img style="max-width: 100px" src="https://nano.to/Moon/QrCode?image=250&amout=50&icon=3"/>
 
 
