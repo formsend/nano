@@ -97,7 +97,7 @@ https://nano.to/Moon?title=Donate
 
 ---
 
-## Advanced Usage
+### Advanced Usage
 
 More advanced and private data can be passed in the body of a POST request.
 
@@ -230,7 +230,7 @@ axios.post('https://nano.to/[NANO_ADDRESS_OR_USERNAME]', {
 
 ```
 
-# Developer API
+![Caption](https://nano.to/Moon/banner?text=Nano.to_API&height=300&width=2000&size=2.2&goal=500)
 
 ![Cover](https://raw.githubusercontent.com/formsend/nano/master/.github/developer.png)
 
