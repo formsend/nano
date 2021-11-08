@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Banner Generator - NANO.TO API</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
+        <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <style>
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                margin-bottom: 35px;
+            }
+            img {
+                max-width: 400px;
+                margin: 50px auto;
+                display: block;
+                width: 100%;
+            }
+            body {
+                text-align: center;
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 30px;
+                font-family: monospace;
+            }
+            input,textarea {
+                display: block;
+                width: 100%;
+                margin-bottom: 20px;
+                min-height: 35px;
+                border: 2px solid;
+                border-radius: 3px;
+                padding: 11px;
+                box-sizing: border-box;
+                font-size: 18px;
+            }
+            textarea {
+                min-height: 200px;
+            }
+            hr {
+                margin: 30px 0;
+                opacity: 0.3;
+            }
+            label {
+                text-align: left;
+                margin-bottom: 10px;
+                display: block;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            a {
+                text-decoration: none;
+                color: inherit;
+                border-bottom: 1px solid;
+
+            }
+            .small {
+
+                text-align: left;
+                display: block;
+                margin-left: 0;
+                margin-bottom: 20px;
+                width: fit-content;
+
+            }
+            img.loading {
+                opacity: 0.5;
+            }
+            @media (min-width: 1025px) {
+                .left {
+                    position: fixed;
+                    left: 0;
+                    top: 0;
+                    background: #fefefe;
+                    width: 50%;
+                    padding: 30px;
+                    max-width: 30vw;
+                    overflow: scroll;
+                    height: 100vh;
+                }
+                .right {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    margin-left: 30vw;
+                    bottom: 0;
+                    left: 0;
+                    height: 100vh;
+                    background-image: url(https://t3.ftcdn.net/jpg/03/69/97/02/360_F_369970265_b5rBgo1yr8GuUZYNSZGSe5fEjpGN4PoV.jpg);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app">
+            <section class="right">
+                <img :src="url" :class="{ 'loading': loading }" alt="">
+            </section>
+            <section class="left">
+                <h3 style="font-size: 38px">Nano Blockchain <br> Banner Generator <br> <small style="font-size: 14px">Powered by <a href="https://github.com/formsend/nano" target="_blank">Nano.to API</a></small> </h3>
+
+                <label>Username</label>
+                <input type="text" v-model="username" placeholder="Username">
+                <small><a class="small" href="https://nano.to" target="_blank">Lease New Username</a></small>
+                <label>Text</label>
+                <textarea type="text" v-model="text" placeholder="Text"></textarea>
+                <hr>
+                <textarea readonly style="background: #6c6c6c33">{{ url }}</textarea>
+                <hr>
+                <h2>Advanced Settings</h2>
+                <hr>
+                <label>Goal Amount</label>
+                <input type="number" v-model="goal" placeholder="Goal Amount">
+                <label>Background Color</label>
+                <input type="text" v-model="background" placeholder="Optional">
+                <label>Font Size</label>
+                <input type="number" v-model="size" placeholder="Optional, Default 2.5">
+                <label>Banner Width</label>
+                <input type="number" v-model="width" placeholder="Width, default 1000">
+                <label>Banner Height</label>
+                <input type="number" v-model="height" placeholder="Height, default 1000">
+                <div style="height: 50px"></div>
+            </section>
+        </div>
+        <script>
+	        var app = new Vue({
+				el: '#app',
+				data: { 
+                    loading: false,
+                    username: 'Moon',
+                    size: '',
+                    height: '',
+                    width: '',
+                    background: '',
+                    goal: 500,
+                    text: 'My Nano Balance is $-usd- which is -percent-% of the $-goal- donation goal.',
+                },
+                methods: {
+                    refresh() {
+                        var self = this
+                        if (!loading) this.loading = true
+                        if (loading) this.loading = false
+                        // setTimeout(() => {
+                        //     self.loading = false
+                        //     self.$forceUpdate()
+                        // }, 1000)
+                    }
+                },
+                watch: {
+                    $data: {
+                        handler: function(val, oldVal) {
+                            this.refresh()
+                        },
+                        deep: true
+                    }
+                },
+                computed: {
+                    url() {
+                        return `https://nano.to/${this.username || 'Moon'}/banner?text=${this.text.split(' ').join('_').split('/').join('/')}&height=${this.height || '1000'}&width=${this.width || '1000'}&size=${this.size || 2.5}${this.goal ? '&goal=' + this.goal : ''}${this.background ? '&background=' + this.background : ''}`
+                    }
+                }
+			})
+        </script>
+    </body>
+</html>
