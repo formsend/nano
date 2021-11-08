@@ -230,9 +230,7 @@ axios.post('https://nano.to/[NANO_ADDRESS_OR_USERNAME]', {
 
 ```
 
-![Caption](https://nano.to/Moon/banner?text=Nano.to_API&height=300&width=2000&size=2.2&goal=500)
-
-![Cover](https://raw.githubusercontent.com/formsend/nano/master/.github/developer.png)
+![Caption](https://nano.to/Moon/banner?text=Nano.to_Free_Blockchain_API&height=300&width=2000&size=2.4&goal=500)
 
 ### The Nano.to API is the easiest way to interact with the NANO blockchain. A CyberPunk UI/UX is an added bonus.
 
