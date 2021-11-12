@@ -2,8 +2,8 @@
   "main": "code/index.js",
   "name": "@formsend/nano",
   "author": {
-    "name": "Formsend",
-    "email": "hello@forward.miami"
+    "name": "Fresh Web Designs, LLC",
+    "email": "hello@fwd.dev"
   },
   "bugs": {
     "url": "https://github.com/formsend/nano/issues"
