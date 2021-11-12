@@ -2,7 +2,7 @@
 
 # **NANO Blockchain Payment API ([Nano.to](https://nano.to))** 
 
-Use this API to create hosted payment links (like Stripe Checkout) for your NANO address. Accessible from any internet connected device with a modern web browser. 
+Use this API to create hosted payment pages (like Stripe Checkout) for your NANO address. Accessible from any internet connected device with a modern web browser. 
 
 Anonymous, no account or API key required to use.
 
