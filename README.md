@@ -1,6 +1,6 @@
 ![Cover](https://raw.githubusercontent.com/formsend/nano/master/.github/banner.png)
 
-# **Free NANO Blockchain Payment API ([Nano.to](https://nano.to))** 
+# **NANO Blockchain Payment API ([Nano.to](https://nano.to))** 
 
 Use this API to create hosted payment pages (like Stripe Checkout) for your NANO address. Accessible from any internet connected device with a modern web browser. 
 
@@ -55,7 +55,7 @@ https://nano.to/nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4
 
 Example with a Username:
 
-```sh
+```text
 https://nano.to/Moon
 ```
 
@@ -63,8 +63,8 @@ Search for and reserve Usernames at [https://api.nano.to](https://api.nano.to/).
 
 # Customize
 
-```sh
-https://nano.to/[NANO_ADDRESS_OR_USERNAME]?title=Donate&price=50
+```text
+https://nano.to/NANO_ADDRESS_OR_USERNAME?title=Donate&price=50
 ```
 
 Available Options:
@@ -102,14 +102,14 @@ https://nano.to/Moon?title=Donate
 More advanced and private data can be passed in the body of a POST request.
 
 ```
-POST: https://nano.to/[NANO_ADDRESS_OR_USERNAME]
+POST: https://nano.to/NANO_ADDRESS_OR_USERNAME
 ```
 
 ```javascript
 // npm install axios
 const axios = require('axios')
 
-axios.post('https://nano.to/[NANO_ADDRESS_OR_USERNAME]', {
+axios.post('https://nano.to/NANO_ADDRESS_OR_USERNAME', {
     "title": "New Order",
     "plans": [
         { "name": "Fries", "price": 5 },
@@ -160,7 +160,7 @@ The recommended way to be notified of incoming payments is by passing a 'webhook
     amount: 1,
     method: {
         symbol: 'nano',
-        address: '[YOUR_ADDRESS]',
+        address: 'YOUR_ADDRESS',
         name: 'Nano',
         rate: '5.43262',
         amount: '0.18621',
@@ -174,9 +174,9 @@ The recommended way to be notified of incoming payments is by passing a 'webhook
     block: {
         type: 'pending',
         amount: '0.18621',
-        hash: '6EE79D2BA2A8995179......',
-        source: '[THEIR_ADDRESS]',
-        amount_raw: '186210000000000000000000000000'
+        hash: '6EE79D2BA2A8995179..',
+        source: 'THEIR_ADDRESS',
+        amount_raw: '1862100000000..'
     },
     metadata: {
         id: 'joemama'
@@ -204,8 +204,6 @@ When creating links in Markdown (or HTML), you can use underscores (\_) instead 
 
 # Themes & Colors
 
-![Cover](https://raw.githubusercontent.com/formsend/nano/master/.github/theme-1.png)
-
 Customize colors and even add an image.
 
 **GET Request**
@@ -229,8 +227,6 @@ axios.post('https://nano.to/[NANO_ADDRESS_OR_USERNAME]', {
 })
 
 ```
-
-![Caption](https://nano.to/Moon/banner?text=Nano.to_Free_Blockchain_API&height=300&width=2000&size=2.4&goal=500)
 
 ### The Nano.to API is the easiest way to interact with the NANO blockchain. A CyberPunk UI/UX is an added bonus.
 
@@ -518,9 +514,9 @@ Contributions, issues and feature requests are welcome! Feel free to check [issu
 
 ## ♥️ Donate 
 
-We accept Crypto donations at the following addresses:
+![Donate](https://nano.to/Moon/banner?text=Our_official_NANO_wallet_balance_is_$-usd-,_or_-percent-%_of_our_$-goal-_monthly_API_funding_goal.&height=400&width=2500&size=2.3&goal=500)
 
-Nano.to Link: [nano.to/moon](https://nano.to/moon?title=Donate&suggest=Nice%20Job:10,Keep%20it%20up:25,Nice%20UI:50,Nano%20to%20Moon%20%F0%9F%9A%80:100?success_url=https://assets.entrepreneur.com/content/3x2/2000/20141106185423-5-powerful-ways-give-thanks-your-people.jpeg&cancel=https://github.com/formsend/nano)
+NANO Donation Link: [nano.to/moon](https://nano.to/moon?title=Donate&suggest=Nice%20Job:10,Keep%20it%20up:25,Nice%20UI:50,Nano%20to%20Moon%20%F0%9F%9A%80:100?success_url=https://assets.entrepreneur.com/content/3x2/2000/20141106185423-5-powerful-ways-give-thanks-your-people.jpeg&cancel=https://github.com/formsend/nano)
 
 ```
 # Nano
