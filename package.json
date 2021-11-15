@@ -11,6 +11,7 @@
   "bundleDependencies": false,
   "dependencies": {
     "@dev-ptera/nano-node-rpc": "^2.0.2",
+    "@fwd/api": "github:fwd/api",
     "axios": "^0.22.0",
     "big.js": "^6.1.1",
     "moment": "^2.29.1",
