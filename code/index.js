@@ -129,7 +129,7 @@ const Nano = {
 
   balance(address) {
     return new Promise(async (resolve, reject) => {
-      NanoNode.account_balance(address)
+      this.NanoNode().account_balance(address)
       .then(balance => resolve(balance))
       .catch(e => resolve({ error: e.message }));
     })
