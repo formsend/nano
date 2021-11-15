@@ -39,7 +39,7 @@ function validate(name, value, type, output) {
 
   const convertToRaw = Nano.toRaw(convertFromRaw);
   validate('Nano.toRaw()', convertToRaw == rawAmount, 'boolean');
-
+  
   const payment = Nano.payment(address, history[0].amount);
   validate('Nano.payment()', payment, 'object');
 

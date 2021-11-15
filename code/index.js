@@ -1,9 +1,13 @@
 const Axios = require('axios');
 const Convert = require('./utilities/convert');
+const moment = require('moment')
 // const Currency = require('nanocurrency')
 // const QRCode = require('qrcode')
 
-const NanoClient = require('nano-node-rpc');
+// const NanoClient = require('nano-node-rpc');
+
+const NanoClient = require("@dev-ptera/nano-node-rpc").NanoClient
+
 const NanoNode = new NanoClient({url: "http://[::1]:7076"})
 
 const Nano = {
@@ -120,14 +124,14 @@ const Nano = {
         if (!address) return new Error("First parameter, NANO address is missing.")
         if (!amount) return new Error("Second parameter, NANO amount is missing.")
 
-        var history = await Utilities.nano.history(address, true)
+        var history = await this.history(address)
             history = history.find(a => a.amount == amount || a.amount == `${amount}0`) || false
 
         if (history && history.hash) {
             return history
         }
 
-        var pending = await Utilities.nano.pending(address, true)
+        var pending = await this.pending(address)
             pending = pending.find(a => a.amount == amount || a.amount == `${amount}0`) || false
 
         if (pending && pending.hash) {
