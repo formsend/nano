@@ -13,7 +13,7 @@ function validate(name, value, type, output) {
 
 (async () => {
   const address = 'nano_37y6iq8m1zx9inwkkcgqh34kqsihzpjfwgp9jir8xpb9jrcwhkmoxpo61f4o'; // Nano.to
-  const address2 = 'nano_1xkyayfycettzcyhbexcmtqbhj5abbruq15urypzsnrby9s8nrhpj6fzxqcg'; // Random Address
+  // const address2 = 'nano_1xkyayfycettzcyhbexcmtqbhj5abbruq15urypzsnrby9s8nrhpj6fzxqcg'; // Random Address
 
   console.clear();
 
@@ -30,7 +30,7 @@ function validate(name, value, type, output) {
   const pending = await Nano.pending(address);
   validate('Nano.pending()', pending, 'object');
 
-  const history = await Nano.history(address2);
+  const history = await Nano.history(address);
   validate('Nano.address()', history, 'object');
 
   const rawAmount = '19424000000000000000000000000';
@@ -40,8 +40,8 @@ function validate(name, value, type, output) {
   const convertToRaw = Nano.toRaw(convertFromRaw);
   validate('Nano.toRaw()', convertToRaw == rawAmount, 'boolean');
 
-  const findBlockByAmount = Nano.findBlockByAmount(address2, history[0].amount);
-  validate('Nano.findBlockByAmount()', findBlockByAmount, 'object');
+  const payment = Nano.payment(address, history[0].amount);
+  validate('Nano.payment()', payment, 'object');
 
   const elapsedTime = Date.now() - startTime;
 
