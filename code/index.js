@@ -18,6 +18,7 @@ const Nano = {
     Server.limits = false;
     Server.serve([
         { path: '/:address/pending', action: async (req) => await Nano.pending(req.params.address) },
+        { path: '/:address/balance', action: async (req) => await Nano.balance(req.params.address) },
         { path: '/:address/account', action: async (req) => await Nano.account(req.params.address) },
         { path: '/:address/history', action: async (req) => await Nano.history(req.params.address) },
         { path: '/:address/history/:amount', action: async (req) => await Nano.payment(req.params.address, req.params.amount) },
