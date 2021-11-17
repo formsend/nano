@@ -17,6 +17,7 @@ const Nano = {
   serve: (port) => {
     Server.limits = false;
     Server.serve([
+        { path: '/hash/:hash', action: async (req) => await Nano.hash(req.params.hash) },
         { path: '/:address/pending', action: async (req) => await Nano.pending(req.params.address) },
         { path: '/:address/balance', action: async (req) => await Nano.balance(req.params.address) },
         { path: '/:address/account', action: async (req) => await Nano.account(req.params.address) },
