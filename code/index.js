@@ -95,12 +95,7 @@ const Nano = {
           })
         })
         response = response.map(a => {
-          a.amount_raw = a.amount
-          a.amount = a.amount ? Nano.fromRaw(a.amount) : a.amount
-          // a.timestamp = Moment.unix(a.timestamp || a.local_timestamp)
           a.hash_url = `https://nano.to/${a.hash}/hash`
-          // a.account_url = `https://nano.to/${a.account}/account`
-          delete a.local_timestamp
           return a
         })
         return resolve(response)
