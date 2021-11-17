@@ -70,7 +70,10 @@ const Nano = {
     return new Promise(async (resolve, reject) => {
       this.NanoNode()._send('block_info', { "json_block": true, "hash": hash })
       .then(block => resolve(block))
-      .catch(e => resolve({ error: e.message }));
+      .catch(e => {
+        console.log(e)
+        resolve({ error: e.message })
+      });
     })
   },
 
