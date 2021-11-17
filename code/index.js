@@ -68,7 +68,8 @@ const Nano = {
     
   hash(hash) {
     return new Promise(async (resolve, reject) => {
-      this.NanoNode()._send('block_info', { "json_block": true, "hash": hash })
+      this.NanoNode().block(hash)
+      // this.NanoNode()._send('block_info', { "json_block": true, "hash": hash })
       .then(block => resolve(block))
       .catch(e => {
         console.log(e)
