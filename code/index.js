@@ -100,6 +100,8 @@ const Nano = {
           })
         })
         response = response.map(a => {
+          a.amount_raw = a.amount
+		      a.amount = Nano.fromRaw(a.amount)
           a.hash_url = `https://nano.to/hash/${a.hash}`
           return a
         })
