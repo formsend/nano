@@ -83,8 +83,8 @@ const Nano = {
     return account.data
   },
   
-  async pending(address) {
-    var pending = await server.http.get(`${nano_api_uri}/${address}/pending`)
+  async pending(address, count) {
+    var pending = await server.http.get(`${nano_api_uri}/${address}/pending?count=${count || 50}`)
     return pending.data
   },
   
@@ -143,9 +143,9 @@ const Nano = {
       })
     },
 
-    pending(address, config) {
+    pending(address, count, config) {
       return new Promise(async (resolve, reject) => {
-        var _config = { "json_block": true, "account": address, "count": "50", "source": true }
+        var _config = { "json_block": true, "account": address, "count": count || 50, "source": true }
         if (config) Object.keys(config).map(a => _config[a] = config[a])
         this.NanoNode()._send('pending', _config)
         .then(pending => {
