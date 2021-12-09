@@ -228,7 +228,7 @@ const Nano = {
             new_balance = Nano.toRaw(new_balance)
 
         if (parseFloat(balance.usd) < parseFloat(config.amount)) {
-          return resolve({ error: "Error: Wallet does not have enough money.", `${balance.nano} NANO,`, `$${balance.usd}` })
+          return resolve({ error: `Error: Wallet does not have enough money. ${balance.nano} NANO, $${balance.usd}` })
         }
 
         var block = await client._send('block_create', {
