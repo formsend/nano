@@ -19,7 +19,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install Node.JS dependencies
-        run: npm test
+        run: npm install
 
       - name: Run JavaScript testing suite
         run: npm test
