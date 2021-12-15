@@ -6,7 +6,8 @@ Use this API to create hosted payment links (like Stripe Checkout) for your NANO
 
 Anonymous, no account or API key required to use.
 
-Launched **September 15th, 2021**. API is stable. More endpoints and complex operations are planned in the future. **Enterprise planned for late 2022.**
+Launched **September 15th, 2021**. API is stable. More complex operations are planned in the future.  **Enterprise planned for late 2023.**
+
 
 [NANO](https://nano.org) is a fee-less, decentralized crypto currency. 
 
