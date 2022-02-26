@@ -10,7 +10,7 @@ Launched **September 15th, 2021**. API is stable.  **Enterprise planned for earl
 
 **Note:** **We did not build or own NANO. We simply built a service on top of it.**
 
-### Live Demo: [nano.to/moon](https://nano.to/Moon?title=Donate%20&price=50%20&donate=true%20&color=white,white%20&background=blue,pink%20&image=https://media3.giphy.com/media/cnuNz0fTBIUGnx4F9T/giphy.gif%20&description=%3Cp%3EHTML%20allowed%20%F0%9F%98%8E%3C/p%3E%20&suggest=Basic:30,Premium:50&cancel_url=https://github.com/formsend/nano)
+### Live Demo: [nano.to/moon](https://nano.to/Moon?title=Donate%20&price=50%20&donate=true%20&color=white,black%20&background=blue,pink%20&image=https://media3.giphy.com/media/cnuNz0fTBIUGnx4F9T/giphy.gif%20&description=%3Cp%3EHTML%20allowed%20%F0%9F%98%8E%3C/p%3E%20&suggest=Basic:30,Premium:50&cancel_url=https://github.com/formsend/nano)
 
 ---
 
