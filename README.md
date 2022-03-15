@@ -45,14 +45,6 @@ Contributions, issues and feature requests are welcome! Feel free to check [issu
 
 ---
 
-## ♥️ Donate 
-
-![Donate](https://nano.to/Moon/banner?text=Our_development_fund_balance_is_$-usd-,_or_-percent-%_of_our_$-goal-_monthly_API_funding_goal.&height=400&width=2500&size=2.3&goal=500)
-
-NANO Donation Link: [nano.to/moon](https://nano.to/moon?title=Donate&suggest=Nice%20Job:10,Keep%20it%20up:25,Nice%20UI:50,Nano%20to%20Moon%20%F0%9F%9A%80:100?success_url=https://assets.entrepreneur.com/content/3x2/2000/20141106185423-5-powerful-ways-give-thanks-your-people.jpeg&cancel=https://github.com/formsend/nano)
-
----
-
 ## Stargazers
 
 [![Stargazers over time](https://starchart.cc/formsend/nano.svg)](https://starchart.cc/formsend/nano)
