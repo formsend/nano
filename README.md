@@ -1,3 +1,3 @@
 ⚠️ Moved ⚠️
 
-https://github.com/fwd/nano-to
+https://github.com/fwd/nano-server
